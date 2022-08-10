@@ -1,12 +1,13 @@
 import React from 'react'
+// import logo from ".../images/logo-sih.png"
 // import bootstrap from 'bootstrap'
 
 export default function Navbar() {
   return (
     <div>
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#">AYJNISHD</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -20,13 +21,16 @@ export default function Navbar() {
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            About
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><a className="dropdown-item" href="#">Scheme</a></li>
+            <li><a className="dropdown-item" href="#">Institute </a></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><a className="dropdown-item" href="#">Regional Centres </a></li>
+            <li><a className="dropdown-item" href="#">Guidance And Support</a></li>
+            <li><a className="dropdown-item" href="#">Copyright Scheme</a></li>
+            <li><a className="dropdown-item" href="#">ADIP Scheme</a></li>
           </ul>
         </li>
         <li className="nav-item">
