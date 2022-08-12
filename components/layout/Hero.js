@@ -16,7 +16,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="hero-bg-img col-10 col-sm-8 col-lg-5 d-column-center">
-                    <Image src={hero_vector_art} className="d-block mx-lg-auto img-fluid"  width={700} height={500}/>
+                    <Image src={hero_vector_art} alt="" className="d-block mx-lg-auto img-fluid"  width={700} height={500}/>
                     <button type="button" className="btn-sih btn text-center m-1">Check Hearing Ability</button>
                     {/* <img src={hero_vector_art} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"/> */}
                 </div>

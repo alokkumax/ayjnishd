@@ -11,7 +11,7 @@ export default function Navbar() {
     <div>
         <nav className="navbar navbar-expand-lg ">
   <div className="container-fluid">
-  <Image src={logo} width={120} height={50}/>
+  <Image src={logo} width={120} alt="" height={50}/>
     <h1 className="navbar-brand mx-3 text-dark" href="#">AYJNISHD</h1>
     <button className="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       {/* <span className="navbar-toggler-icon"></span> */}

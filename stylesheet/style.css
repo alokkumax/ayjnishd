@@ -74,3 +74,67 @@
         width: 100%;
     }
 }
+
+/* Card Section */
+#appbody
+{
+    background-color: #FCE6D6;
+}
+.heading
+{
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.card
+{
+    border-radius: 15px;
+    box-shadow: 0px 0.25px 3px rgb(0 0 0 / 4%), 0px 2.75px 9px rgb(0 0 0 / 19%);
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: max-content;
+    height: auto;
+    min-height: 650px;
+    margin-bottom: 10px;
+    margin: 1vh;
+    padding: 1vh;
+}
+.tagp
+{
+    font-size: 1.5vh;
+    font-weight: bold;
+    float: left;
+}
+.tagp2
+{
+    font-size: 1.5vh;
+    font-weight: bold;
+    float: right;
+}
+.stepbut
+{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    margin: 1vh;
+    padding: 1vh;
+}
+.applybut
+{
+    background-color: #FFB27D;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    margin: 1vh;
+    padding: 1vh;
+}
+.fixapplybut
+{
+    text-align: right;
+}
