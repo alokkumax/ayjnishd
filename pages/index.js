@@ -3,12 +3,24 @@ import Hero from "../components/layout/Hero"
 import Kpi from "../components/layout/Kpi";
 import CiApplication from "../components/layout/CIApplication";
 
-export default function Home() {
+//KPI from restAPI
+const api = 'https://ayjnishd-backend.herokuapp.com/kpi';
+export async function getServerSideProps(){
+   const res = await fetch(api);
+    const data = await res.json();
+    return{
+        props:{
+            data
+        }
+    }
+}
+export default function Home({data}) {
+  console.log(data);
   return (
     <div>
       <Navbar/>
       <Hero/>
-      <Kpi/>
+      <Kpi data={data}/>
       <CiApplication/>
     </div>
   )
