@@ -3,8 +3,30 @@
     --main: #FF6D00;
     --white: #ffffff;
   }
-/* Navbar */
 
+.btn-sih{
+    background-color: #FF6D00;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.btn-sih:hover{
+    background-color: #fc8931;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.d-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+.d-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center ;
+}
+/* Navbar */
 .main-color{
     color:var(--main);
 }
@@ -37,4 +59,18 @@
 .dropdown-item:hover{
     background-color:var(--main);
     color: white;
+}
+
+/* Hero Section  */
+
+.hero-bg{
+    background-image: url("../images/hero-bg.png");
+}
+@media(max-width:990px){
+    .hero-text{
+        text-align: center;
+    }
+    .hero-bg-img{
+        width: 100%;
+    }
 }
