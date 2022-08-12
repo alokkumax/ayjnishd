@@ -8,32 +8,32 @@ import Kpi4 from '../../images/Kpi4.png'
 export default function Kpi () {
   return (
     <div className="container row d-row-center col-12 m-auto">
-        <div className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
+        <div id="kpi1" className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
             <Image src={Kpi1} alt="" height={80} width={80}></Image>
-            <div className='d-col-center'>
-                <h4 className='text-start'>1254</h4>
-                <p className='text-start'>Registered for CI</p>
+            <div className='d-col-center kpi1-text'>
+                <h4 className=''>1254</h4>
+                <p className=''>Registered for CI</p>
             </div>
         </div>
-        <div className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
+        <div id="kpi2" className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
         <Image src={Kpi2} height={80}  alt="" width={80}></Image>
-            <div className='d-col-center'>
-                <h4 className='text-start'>40</h4>
-                <p className='text-start'>Professionals Registered</p>
+            <div className='d-col-center kpi2-text'>
+                <h4 className=''>40</h4>
+                <p className=''>Professionals Registered</p>
             </div>
         </div>
-        <div className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
+        <div id="kpi3" className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
         <Image src={Kpi3} height={80} alt="" width={80}></Image>
-            <div className='d-col-center'>
-                <h4 className='text-start'>8475</h4>
-                <p className='text-start'>Surgeries Done</p>
+            <div className='d-col-center kpi3-text'>
+                <h4 className=''>8475</h4>
+                <p className=''>Surgeries Done</p>
             </div>
         </div>
-        <div className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
+        <div id="kpi4" className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
         <Image src={Kpi4} height={80} alt="" width={80}></Image>
-            <div className='d-col-center'>
-                <h4 className='text-start'>5478</h4>
-                <p className='text-start'>Hospitals Empanelled</p>
+            <div className='d-col-center kpi4-text'>
+                <h4 className=''>5478</h4>
+                <p className=''>Hospitals Empanelled</p>
             </div>
         </div>
     </div>

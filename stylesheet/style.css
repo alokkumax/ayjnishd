@@ -74,6 +74,14 @@
         width: 100%;
     }
 }
+@media(max-width:575px){
+    #kpi2,#kpi4{
+        flex-direction: row-reverse;
+    }
+    .kpi1-text h4, .kpi1-text p,.kpi3-text h4, .kpi3-text p{
+        text-align:right;
+    }
+}
 
 /* Card Section */
 #appbody
