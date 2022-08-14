@@ -4,9 +4,9 @@ const Faq = () => {
     <>
       <section id="faq">
         <div className="container">
-          <h1 className="heading">F.A.Q</h1>
+          <h3 className="heading">F.A.Q</h3>
           <center>
-            <div className="row faqmenu">
+            <div className="row faqmenu my-3">
               <div className="col">
                 <div className="menuactive">
                   <i
@@ -65,9 +65,9 @@ const Faq = () => {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body parafix">
-                    <h3 className="faqcardheading">
+                    <h5 className="faqcardheading">
                       What is a Payment Gateway?
-                    </h3>
+                    </h5>
                     <p>
                       A payment gateway is an ecommerce service that processes
                       online payments for online as well as offline businesses.
