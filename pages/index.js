@@ -2,6 +2,7 @@ import Navbar from "../components/layout/Navbar"
 import Hero from "../components/layout/Hero"
 import Kpi from "../components/layout/Kpi";
 import CiApplication from "../components/layout/CIApplication";
+import Faq from "../components/layout/Faq";
 
 //KPI from restAPI
 const api = 'https://ayjnishd-backend.herokuapp.com/kpi';
@@ -21,6 +22,7 @@ export default function Home({data}) {
       <Hero/>
       <Kpi data={data}/>
       <CiApplication/>
+      <Faq/>
     </div>
   )
 } 
