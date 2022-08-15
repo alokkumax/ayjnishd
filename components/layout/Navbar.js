@@ -12,7 +12,7 @@ export default function Navbar() {
     addScript.setAttribute('src', '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
     document.body.appendChild(addScript);
     window.googleTranslateElementInit = googleTranslateElementInit;
-}, [])
+}, [googleTranslateElementInit])
     var duplicate_google_translate_counter = 0;
     const googleTranslateElementInit = () => {
         if (duplicate_google_translate_counter == 0) {

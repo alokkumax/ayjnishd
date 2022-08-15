@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { BsFillPersonFill } from 'react-icons/bs';
 import { BiTimeFive } from 'react-icons/bi';
+import Image from "next/image";
+
 
 export default function News({newsData}) {
   const [ data, setData] = useState([])
