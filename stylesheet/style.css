@@ -30,6 +30,9 @@ body{
     justify-content: center;
     align-items:center ;
 }
+/*Ar 3D model*/
+model-viewer{width: 400px; height: 500px; margin: 0 auto;}
+
 /* Navbar */
 .main-color{
     color:var(--main);

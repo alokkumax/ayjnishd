@@ -16,13 +16,13 @@ const Info = () => {
         </div>
 
         <div className="p-2 imgDiv">
-          <Image src={img} />
+          <Image src={img} alt=".."/>
         </div>
       </div>
 
       <div className="vector2 div2 d-row-center">
         <div className="p-2 imgDiv">
-          <Image src={img} />
+          <Image src={img} alt=".."/>
         </div>
 
         <div className="textDiv">

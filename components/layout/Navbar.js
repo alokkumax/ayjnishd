@@ -1,7 +1,6 @@
-import {React,useContext, useEffect} from "react";
+import {React, useEffect} from "react";
 import Image from "next/image";
 import logo from "../../images/logo-sih.png";
-// import bootstrap from 'bootstrap'
 import { AiOutlineSound } from "react-icons/ai";
 import { HiMenu } from "react-icons/hi";
 
@@ -13,20 +12,14 @@ export default function Navbar() {
     addScript.setAttribute('src', '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
     document.body.appendChild(addScript);
     window.googleTranslateElementInit = googleTranslateElementInit;
-    // var b = document.getElementsByClassName("goog-close-link")[0]
-    // if(b!=null)
-    //   document.getElementsByClassName("goog-close-link")[0].click()
 }, [])
-var duplicate_google_translate_counter = 0;
-const googleTranslateElementInit = () => {
-    if (duplicate_google_translate_counter == 0) {
-      new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages : "en,hi,mr,te,ta"}, 'google_translate_element');
-      
-   }
-   duplicate_google_translate_counter++;
-}
-
-
+    var duplicate_google_translate_counter = 0;
+    const googleTranslateElementInit = () => {
+        if (duplicate_google_translate_counter == 0) {
+          new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages : "en,hi,mr,te,ta"}, 'google_translate_element');
+      }
+      duplicate_google_translate_counter++;
+    }
 //Google function ends here
 
   return (
