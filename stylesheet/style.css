@@ -44,7 +44,7 @@
     color: white;
     width: 12vh;
     padding: 1vh;
-    border-radius: 18px;
+    border-radius: 10px;
     text-align: center;
 }
 .dropdown-toggle::after{
@@ -202,10 +202,10 @@
 }
 .faqmenu
 {
+    gap: 35px;
+    max-width: fit-content;
     background-color: #FCE6D6;
     border-radius: 10px;
-    width: 100%;
-    max-width: 700px;
     height: auto;
     margin: 1vh;
     padding: 1vh;

@@ -64,6 +64,11 @@ const googleTranslateElementInit = () => {
                   About
                 </a>
                 <ul className="dropdown-menu">
+                <li>
+                    <a className="dropdown-item" href="#">
+                      About the Scheme
+                    </a>
+                  </li>
                   <li>
                     <a className="dropdown-item" href="#">
                       ADIP Scheme
@@ -219,7 +224,7 @@ const googleTranslateElementInit = () => {
                   </li>
                 </ul>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -251,7 +256,7 @@ const googleTranslateElementInit = () => {
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               {/* Google Translate ID: */}
               <div className="translate" id="google_translate_element" ></div>
               {/* google div ends here */}

@@ -1,942 +1,340 @@
 import React from "react";
-import Script from "next/script";
+import { FiSun } from "react-icons/fi";
+import { BsMoon } from "react-icons/bs";
+import { FiBox } from "react-icons/fi";
+import { AiOutlineQuestion } from "react-icons/ai";
+
+
+const schemeFaq = [
+  {
+    id: 1,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 2,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 3,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 4,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+];
+const instituteFaq = [
+  {
+    id: 1,
+    faq: "What is a Institute?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 2,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 3,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 4,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+];
+const productfaq = [
+  {
+    id: 1,
+    faq: "What is a Product?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 2,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 3,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 4,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+];
+const Eligibilityfaq = [
+  {
+    id: 1,
+    faq: "What is a Eligibilty?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 2,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 3,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+  {
+    id: 4,
+    faq: "What is a Payment Gateway?",
+    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+  },
+];
 const Faq = () => {
   return (
     <>
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-    document.getElementById("defaultOpen").click();
-  `,
-        }}
-      />
       <section id="faq">
         <div className="container">
           <h3 className="heading">F.A.Q</h3>
 
           <center>
-            <div className="row faqmenu my-3">
-              <div className="col">
-                <div
-                  className="tablinks"
-                  onclick="openCity(event, 'Scheme')"
-                  id="defaultOpen"
-                >
-                  <i
-                    className="fa fa-sun-o"
-                    aria-hidden="true"
-                    id="faqmenulinks"
-                  ></i>
+            <ul className="nav nav-tabs faqmenu" id="myTab" role="tablist">
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link active"
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home"
+                  type="button"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="true"
+                ><FiSun />
                   Scheme
-                </div>
-              </div>
-              <div className="col">
-                <div
-                  className="tablinks"
-                  onclick="openCity(event, 'Institute')"
-                  id="defaultOpen"
-                >
-                  <i
-                    className="fa fa-cube"
-                    aria-hidden="true"
-                    id="faqmenulinks"
-                  ></i>
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                ><BsMoon />
                   Institute
-                </div>
-              </div>
-              <div className="col">
-                <div
-                  className="tablinks"
-                  onclick="openCity(event, 'Product')"
-                  id="defaultOpen"
-                >
-                  <i
-                    className="fa fa-rocket"
-                    aria-hidden="true"
-                    id="faqmenulinks"
-                  ></i>
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                ><FiBox />
                   Product
-                </div>
-              </div>
-              <div className="col">
-                <div
-                  className="tablinks"
-                  onclick="openCity(event, 'Eligibility')"
-                  id="defaultOpen"
-                >
-                  <i
-                    className="fa fa-file-text"
-                    aria-hidden="true"
-                    id="faqmenulinks"
-                  ></i>
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className="nav-link"
+                  id="eligibilty-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#eligibilty"
+                  type="button"
+                  role="tab"
+                  aria-controls="eligibilty"
+                  aria-selected="false"
+                ><AiOutlineQuestion />
                   Eligibility
-                </div>
+                </button>
+              </li>
+            </ul>
+          </center>
+
+          <div className="col mt-5">
+            <div className="tab-content " id="myTabContent">
+
+              <div
+                className="tab-pane fade show active"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                {schemeFaq.map((item, key) => (
+                  <div
+                    className="accordion-item tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target={`#collapse${key}`}
+                        aria-expanded="true"
+                        aria-controls={`collapse${key}`}
+                      >
+                        <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
+                        <span>&nbsp;&nbsp;</span>
+                        <b>{item.faq}</b>
+                      </button>
+                    </h2>
+
+                    <div
+                      id={`collapse${key}`}
+                      className="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body parafix">
+                        <h5 className="faqcardheading">{item.faq}</h5>
+                        <p>{item.des}</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                ))}
+              </div>
+
+              <div
+                className="tab-pane fade"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                {instituteFaq.map(item => (
+                  <div
+                    className="accordion-item tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
+                        <span>&nbsp;&nbsp;</span>
+                        <b>{item.faq}</b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body parafix">
+                        <h5 className="faqcardheading">{item.faq}</h5>
+                        <p>{item.des}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div
+                className="tab-pane fade"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                {productfaq.map(item => (
+                  <div
+                    className="accordion-item tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
+                        <span>&nbsp;&nbsp;</span>
+                        <b>{item.faq}</b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body parafix">
+                        <h5 className="faqcardheading">{item.faq}</h5>
+                        <p>{item.des}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div
+                className="tab-pane fade"
+                id="eligibilty"
+                role="tabpanel"
+                aria-labelledby="eligibilty-tab"
+              >
+                {Eligibilityfaq.map(item => (
+                  <div
+                    className="accordion-item tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
+                        <span>&nbsp;&nbsp;</span>
+                        <b>{item.faq}</b>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body parafix">
+                        <h5 className="faqcardheading">{item.faq}</h5>
+                        <p>{item.des}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          </center>
-          <div className="faqcontainer">
-            {/* SCHEME SECTION */}
-            <section id="Scheme" className="tabcontent">
-              <div className="accordion" id="accordionExample">
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
-                    <button
-                      className="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>What is a Payment Gateway?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    className="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h5 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h5>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>
-                        Does Instapay provide international payments support?
-                      </b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingThree">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFour">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFive">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFive"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            {/* INSTITUTE SECTION */}
-            <section id="Institute" className="tabcontent">
-              <div className="accordion" id="accordionExample">
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
-                    <button
-                      className="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>What is a Payment Gateway?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    className="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h5 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h5>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>
-                        Does Instapay provide international payments support?
-                      </b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingThree">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFour">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFive">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFive"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            {/* PRODUCT SECTION */}
-            <section id="Product" className="tabcontent">
-              <div className="accordion" id="accordionExample">
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
-                    <button
-                      className="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>What is a Payment Gateway?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    className="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h5 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h5>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>
-                        Does Instapay provide international payments support?
-                      </b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingThree">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFour">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFive">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFive"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            {/* ELIGIBILITY SECTION */}
-            <section id="Eligibility" className="tabcontent">
-              <div className="accordion" id="accordionExample">
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
-                    <button
-                      className="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>What is a Payment Gateway?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    className="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h5 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h5>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>
-                        Does Instapay provide international payments support?
-                      </b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingThree">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFour">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFive">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
-                      <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
-                      <span>&nbsp;&nbsp;</span>
-                      <b>Does Instapay provide national payments support?</b>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFive"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body parafix">
-                      <h3 className="faqcardheading">
-                        What is a Payment Gateway?
-                      </h3>
-                      <p>
-                        A payment gateway is an ecommerce service that processes
-                        online payments for online as well as offline
-                        businesses. Payment gateways help accept payments by
-                        transferring key information from their merchant
-                        websites to issuing banks, card associations and online
-                        wallet players.
-                      </p>
-                      <p>
-                        Payment gateways play a vital role in the online
-                        transaction process, which is the realisation of value,
-                        and hence are seen as an important pillar of ecommerce.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
           </div>
         </div>
       </section>
