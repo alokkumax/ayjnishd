@@ -5,6 +5,8 @@ import Kpi2 from "../../images/Kpi2.png";
 import Kpi3 from "../../images/Kpi3.png";
 import Kpi4 from "../../images/Kpi4.png";
 
+
+
 export default function Kpi({ data }) {
   return (
     <div className="container row d-row-center col-12 m-auto">

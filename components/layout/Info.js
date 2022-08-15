@@ -1,0 +1,41 @@
+import Image from "next/image";
+import React from "react";
+import img from "../../images/hero-vector-act.png";
+
+const Info = () => {
+  return (
+    <div>
+      <div className="vector1 div1">
+        <div className="textDiv">
+          <h2 className="alignLeft">COCHLEAR IMPLANT</h2>
+          <h5 className="description alignLeft">
+            The cochlear implant is a prosthetic device, a part of which is
+            surgically implanted inside the{" "}
+          </h5>
+          <button className="button alignLeft">Read More</button>
+        </div>
+
+        <div className="p-2 imgDiv">
+          <Image src={img} />
+        </div>
+      </div>
+
+      <div className="vector1 div2">
+        <div className="p-2 imgDiv">
+          <Image src={img} />
+        </div>
+
+        <div className="textDiv">
+          <h2 className="alignRight">IMPACT OF COCHLEAR IMPLANT</h2>
+          <h5 className="description alignRight">
+            Hearing impairment has a significant impact on the child and his
+            family. This impact is seen on every aspect of life
+          </h5>
+          <button className="button alignRight">Read More</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Info;

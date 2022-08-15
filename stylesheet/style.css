@@ -82,7 +82,49 @@
         text-align:right;
     }
 }
-
+/* Info */
+.description{
+    margin: 20px 0px 40px 0px;
+}
+.div1{
+    background-color: #FFFFFF;
+}
+.div2{
+    background-color: #FCE6D6;
+}
+.button{
+    color: #FFFFFF;
+    padding: 5px 10px 5px 10px;
+    background-color: #FF6D00;
+    border: 2px solid #FF6D00;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: #ff9c50;
+    border: 2px solid #ff9c50;
+}
+.alignLeft{
+    align-self: flex-start;
+}
+.alignRight{
+    align-self: flex-end;
+}
+.imgDiv{
+    max-width: 500px;
+    width: "35%";
+}
+.textDiv{
+    width: "65%";
+    display: flex;
+    flex-direction: column;
+}
+.vector1{
+    display: flex;
+    flex-direction: row;
+    width: "100%";
+    justify-content: space-between;
+    padding: 80px 50px 80px 50px;
+}
 /* Card Section */
 #appbody
 {

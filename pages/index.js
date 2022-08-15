@@ -4,6 +4,8 @@ import Kpi from "../components/layout/Kpi";
 import CiApplication from "../components/layout/CIApplication";
 import Faq from "../components/layout/Faq";
 import PdfViewer from "../components/layout/PdfViewer";
+import Info from "../components/layout/Info";
+import News from "../components/layout/News";
 
 //KPI from restAPI
 const api = 'https://ayjnishd-backend.herokuapp.com/kpi';
@@ -16,12 +18,15 @@ export async function getServerSideProps(){
         }
     }
 }
+
 export default function Home({data}) {
   return (
     <div>
       <Navbar/>
       <Hero/>
       <Kpi data={data}/>
+      <Info/>
+      {/* <News/> */}
       <CiApplication/>
       <Faq/>
       {/* <PdfViewer/> */}
