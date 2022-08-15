@@ -5,7 +5,7 @@ import img from "../../images/hero-vector-act.png";
 const Info = () => {
   return (
     <div>
-      <div className="vector1 div1">
+      <div className="vector1 div1 d-row-center">
         <div className="textDiv">
           <h2 className="alignLeft">COCHLEAR IMPLANT</h2>
           <h5 className="description alignLeft">
@@ -20,7 +20,7 @@ const Info = () => {
         </div>
       </div>
 
-      <div className="vector1 div2">
+      <div className="vector2 div2 d-row-center">
         <div className="p-2 imgDiv">
           <Image src={img} />
         </div>

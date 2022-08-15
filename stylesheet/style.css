@@ -1,3 +1,7 @@
+body{
+    position: relative;
+    top:0;
+}
 /* Primary Css */
 :root {
     --main: #FF6D00;
@@ -118,12 +122,20 @@
     display: flex;
     flex-direction: column;
 }
-.vector1{
+.vector1,.vector2{
     display: flex;
     flex-direction: row;
     width: "100%";
     justify-content: space-between;
     padding: 80px 50px 80px 50px;
+}
+@media(max-width:860px){
+    .vector1{
+        flex-direction: column;
+    }
+    .vector2{
+        flex-direction: column-reverse;
+    }
 }
 /* Card Section */
 #appbody
@@ -328,3 +340,6 @@
     padding: 8px;
     color: rgb(0, 0, 0) !important;
  }
+ /* .skiptranslate {
+    display: none;
+} */
