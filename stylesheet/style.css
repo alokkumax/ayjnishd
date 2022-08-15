@@ -166,6 +166,11 @@
     text-align: right;
 }
 /* FAQ Section */
+            
+#Institute,#Product,#Eligibility
+{
+    display: none;
+}
 #faq
 {
     min-height: 100vh;
@@ -248,3 +253,31 @@
 .accordion-button:focus {
     border-color: none;
 }
+/* PDF VIEWER */
+#PdfViewer
+{
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #FCE6D6;
+}
+.pdf_iframe
+{
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    border: 0;
+    background: transparent!important;
+}
+/* GOOGLE TRANSLATOR */
+/* It May Violate Google Policies So Its Better To Comment The Logo Hiding CSS */
+.goog-logo-link {
+    display:none !important;
+ }
+ 
+ .goog-te-gadget {
+    color: transparent !important;
+ }
+ 
+ .goog-te-gadget .goog-te-combo {
+    color: black !important;
+ }
