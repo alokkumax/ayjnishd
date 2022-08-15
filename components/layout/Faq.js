@@ -4,7 +4,6 @@ import { BsMoon } from "react-icons/bs";
 import { FiBox } from "react-icons/fi";
 import { AiOutlineQuestion } from "react-icons/ai";
 
-
 const schemeFaq = [
   {
     id: 1,
@@ -112,10 +111,12 @@ const Faq = () => {
                   role="tab"
                   aria-controls="home"
                   aria-selected="true"
-                ><FiSun />
+                >
+                  <FiSun />
                   Scheme
                 </button>
               </li>
+
               <li className="nav-item" role="presentation">
                 <button
                   className="nav-link"
@@ -126,7 +127,8 @@ const Faq = () => {
                   role="tab"
                   aria-controls="profile"
                   aria-selected="false"
-                ><BsMoon />
+                >
+                  <BsMoon />
                   Institute
                 </button>
               </li>
@@ -140,7 +142,8 @@ const Faq = () => {
                   role="tab"
                   aria-controls="contact"
                   aria-selected="false"
-                ><FiBox />
+                >
+                  <FiBox />
                   Product
                 </button>
               </li>
@@ -154,7 +157,8 @@ const Faq = () => {
                   role="tab"
                   aria-controls="eligibilty"
                   aria-selected="false"
-                ><AiOutlineQuestion />
+                >
+                  <AiOutlineQuestion />
                   Eligibility
                 </button>
               </li>
@@ -163,7 +167,6 @@ const Faq = () => {
 
           <div className="col mt-5">
             <div className="tab-content " id="myTabContent">
-
               <div
                 className="tab-pane fade show active"
                 id="home"
@@ -172,12 +175,12 @@ const Faq = () => {
               >
                 {schemeFaq.map((item, key) => (
                   <div
+                    key={item.id}
                     className="accordion-item tab-pane fade show active"
                     id="home"
                     role="tabpanel"
                     aria-labelledby="home-tab"
                   >
-                    
                     <h2 className="accordion-header" id="headingOne">
                       <button
                         className="accordion-button"
@@ -204,7 +207,6 @@ const Faq = () => {
                         <p>{item.des}</p>
                       </div>
                     </div>
-                    
                   </div>
                 ))}
               </div>
@@ -215,8 +217,9 @@ const Faq = () => {
                 role="tabpanel"
                 aria-labelledby="profile-tab"
               >
-                {instituteFaq.map(item => (
+                {instituteFaq.map((item, key) => (
                   <div
+                    key={item.id}
                     className="accordion-item tab-pane fade show active"
                     id="home"
                     role="tabpanel"
@@ -227,17 +230,18 @@ const Faq = () => {
                         className="accordion-button"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
+                        data-bs-target={`#collapse${item.id}`}
                         aria-expanded="true"
-                        aria-controls="collapseOne"
+                        aria-controls={`collapse${item.id}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
                         <b>{item.faq}</b>
                       </button>
                     </h2>
+
                     <div
-                      id="collapseOne"
+                      id={`collapse${item.id}`}
                       className="accordion-collapse collapse show"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
@@ -257,8 +261,9 @@ const Faq = () => {
                 role="tabpanel"
                 aria-labelledby="contact-tab"
               >
-                {productfaq.map(item => (
+                {productfaq.map((item, key) => (
                   <div
+                    key={item.id}
                     className="accordion-item tab-pane fade show active"
                     id="home"
                     role="tabpanel"
@@ -269,17 +274,18 @@ const Faq = () => {
                         className="accordion-button"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
+                        data-bs-target={`#collapse${item.id}`}
                         aria-expanded="true"
-                        aria-controls="collapseOne"
+                        aria-controls={`collapse${item.id}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
                         <b>{item.faq}</b>
                       </button>
                     </h2>
+
                     <div
-                      id="collapseOne"
+                      id={`collapse${item.id}`}
                       className="accordion-collapse collapse show"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
@@ -299,8 +305,9 @@ const Faq = () => {
                 role="tabpanel"
                 aria-labelledby="eligibilty-tab"
               >
-                {Eligibilityfaq.map(item => (
+                {Eligibilityfaq.map((item, key) => (
                   <div
+                    key={item.id}
                     className="accordion-item tab-pane fade show active"
                     id="home"
                     role="tabpanel"
@@ -311,17 +318,18 @@ const Faq = () => {
                         className="accordion-button"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
+                        data-bs-target={`#collapse${item.id}`}
                         aria-expanded="true"
-                        aria-controls="collapseOne"
+                        aria-controls={`collapse${item.id}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
                         <b>{item.faq}</b>
                       </button>
                     </h2>
+
                     <div
-                      id="collapseOne"
+                      id={`collapse${item.id}`}
                       className="accordion-collapse collapse show"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"

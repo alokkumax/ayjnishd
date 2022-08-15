@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsFillPersonFill } from 'react-icons/bs';
 import { BiTimeFive } from 'react-icons/bi';
 
 export default function News({newsData}) {
+  const [ data, setData] = useState([])
+  const fetchData = () => {
+    fetch("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json")
+    .then((res)=>{
+      return res.json();
+    }).then((data)=>{
+      setData(data)
+    })
+}
+useEffect(()=>{
+  fetchData();
+},[])
+
   const {articles = []} = newsData;
   return (
     <div className='newsPage'>
