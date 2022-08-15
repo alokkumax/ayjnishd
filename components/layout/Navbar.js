@@ -253,7 +253,7 @@ const googleTranslateElementInit = () => {
                 </ul>
               </li>
               {/* Google Translate ID: */}
-              <div id="google_translate_element" ></div>
+              <div className="translate" id="google_translate_element" ></div>
               {/* google div ends here */}
               <li className="nav-item">
                 <a

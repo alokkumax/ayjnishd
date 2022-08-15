@@ -279,5 +279,10 @@
  }
  
  .goog-te-gadget .goog-te-combo {
-    color: black !important;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: transparent;
+    border: transparent;
+    padding: 8px;
+    color: rgb(0, 0, 0) !important;
  }
