@@ -31,7 +31,7 @@ export default function Home({data}) {
       <CiApplication/>
       <Faq/>
       {/* <PdfViewer/> */}
-      <SideBar/>
+      {/* <SideBar/> */}
     </div>
   )
 } 
