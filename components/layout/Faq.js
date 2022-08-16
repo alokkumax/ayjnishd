@@ -176,19 +176,19 @@ const Faq = () => {
                 {schemeFaq.map((item, key) => (
                   <div
                     key={item.id}
-                    className="accordion-item tab-pane fade show active"
+                    className="accordion-item tab-pane fade show "
                     id="home"
                     role="tabpanel"
                     aria-labelledby="home-tab"
                   >
                     <h2 className="accordion-header" id="headingOne">
                       <button
-                        className="accordion-button"
+                        className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${key}`}
+                        data-bs-target={`#collapse${item.id}`}
                         aria-expanded="true"
-                        aria-controls={`collapse${key}`}
+                        aria-controls={`collapse${item.id}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
@@ -197,8 +197,8 @@ const Faq = () => {
                     </h2>
 
                     <div
-                      id={`collapse${key}`}
-                      className="accordion-collapse collapse show"
+                      id={`collapse${item.id}`}
+                      className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
                     >
@@ -227,7 +227,7 @@ const Faq = () => {
                   >
                     <h2 className="accordion-header" id="headingOne">
                       <button
-                        className="accordion-button"
+                        className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -271,7 +271,7 @@ const Faq = () => {
                   >
                     <h2 className="accordion-header" id="headingOne">
                       <button
-                        className="accordion-button"
+                        className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
@@ -315,7 +315,7 @@ const Faq = () => {
                   >
                     <h2 className="accordion-header" id="headingOne">
                       <button
-                        className="accordion-button"
+                        className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target={`#collapse${item.id}`}
