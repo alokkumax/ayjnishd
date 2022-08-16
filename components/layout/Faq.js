@@ -186,9 +186,9 @@ const Faq = () => {
                         className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${item.id}`}
+                        data-bs-target={`#collapse${key}`}
                         aria-expanded="true"
-                        aria-controls={`collapse${item.id}`}
+                        aria-controls={`collapse${key}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
@@ -197,8 +197,8 @@ const Faq = () => {
                     </h2>
 
                     <div
-                      id={`collapse${item.id}`}
-                      className="accordion-collapse collapse"
+                      id={`collapse${key}`}
+                      className="accordion-collapse collapse show"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
                     >
@@ -210,7 +210,7 @@ const Faq = () => {
                   </div>
                 ))}
               </div>
-
+                  
               <div
                 className="tab-pane fade"
                 id="profile"
@@ -242,7 +242,7 @@ const Faq = () => {
 
                     <div
                       id={`collapse${item.id}`}
-                      className="accordion-collapse collapse show"
+                      className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
                     >
@@ -286,7 +286,7 @@ const Faq = () => {
 
                     <div
                       id={`collapse${item.id}`}
-                      className="accordion-collapse collapse show"
+                      className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
                     >
@@ -330,7 +330,7 @@ const Faq = () => {
 
                     <div
                       id={`collapse${item.id}`}
-                      className="accordion-collapse collapse show"
+                      className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
                     >

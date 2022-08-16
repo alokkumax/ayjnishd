@@ -27,11 +27,8 @@ export default function Home({data}) {
       <Hero/>
       <Kpi data={data}/>
       <Info/>
-      {/* <News/> */}
       <CiApplication/>
       <Faq/>
-      {/* <PdfViewer/> */}
-      <SideBar/>
     </div>
   )
 } 
