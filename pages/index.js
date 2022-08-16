@@ -6,6 +6,7 @@ import Faq from "../components/layout/Faq";
 import PdfViewer from "../components/layout/PdfViewer";
 import Info from "../components/layout/Info";
 import News from "../components/layout/News";
+import SideBar from "../components/layout/SideBar";
 
 //KPI from restAPI
 const api = 'https://ayjnishd-backend.herokuapp.com/kpi';
@@ -30,6 +31,7 @@ export default function Home({data}) {
       <CiApplication/>
       <Faq/>
       {/* <PdfViewer/> */}
+      <SideBar/>
     </div>
   )
 } 

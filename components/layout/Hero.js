@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import hero_vector_art from "../../images/hero-vector-act.png"
 import dynamic from "next/dynamic";
-const AR = dynamic(() => import("./ar"), { ssr: false });
+const AR = dynamic(() => import("./AR"), { ssr: false });
 
 export default function Hero() {
   return (
