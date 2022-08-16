@@ -55,7 +55,7 @@ export default function Navbar() {
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="about"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -64,7 +64,7 @@ export default function Navbar() {
                 </a>
                 <ul className="dropdown-menu">
                 <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="about">
                       About the Scheme
                     </a>
                   </li>
