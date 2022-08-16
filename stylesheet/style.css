@@ -354,3 +354,23 @@ button.accordion-button[aria-expanded*=true] {
  /* .skiptranslate {
     display: none;
 } */
+/* sidebar */
+.sidebarbg
+{
+    background-color: #ff9c50!important;
+    color: black!important;
+}
+#sidebar
+{
+    text-decoration: none!important;
+}
+.sidebaractive
+{
+    background-color: #FF6D00!important;
+    color: white!important;
+}
+.alinkfix
+{
+    text-decoration: none!important;
+    color: #000000!important;
+}
