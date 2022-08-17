@@ -29,9 +29,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="/ci-forms" className="applybut">
-                      Apply Here
-                    </a>
+                    <Link href="/ci-forms" className="applybut">
+                      <button className="btn btn-sih">Apply Here ...</button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -55,9 +55,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    {/* <Link to="/" className="applybut">
-                      Check Here
-                    </Link> */}
+                    <Link href="/ci-forms" className="applybut">
+                      <button className="btn btn-sih">Check Here ...</button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -82,9 +82,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    {/* <Link to="/" className="applybut">
-                      Check Here
-                    </Link> */}
+                    <Link href="/ci-forms" className="applybut">
+                      <button className="btn btn-sih">Check Here ...</button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -110,9 +110,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    {/* <Link to="/" className="applybut">
-                      See All Cases
-                    </Link> */}
+                    <Link href="/ci-forms" className="applybut">
+                      <button className="btn btn-sih">Check Here ...</button>
+                    </Link>
                   </div>
                 </div>
               </div>
