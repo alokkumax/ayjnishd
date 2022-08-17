@@ -1,6 +1,7 @@
 import React from "react";
 import cardimg from "../../images/hero-vector-act.png";
 import Image from "next/image";
+import Link from 'next/link'
 // import styles from "../styles/CiApplication.module.css"
 const CiApplication = () => {
   return (
@@ -28,7 +29,7 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="#" className="applybut">
+                    <a href="/ci-forms" className="applybut">
                       Apply Here
                     </a>
                   </div>
@@ -54,9 +55,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="#" className="applybut">
+                    {/* <Link to="/" className="applybut">
                       Check Here
-                    </a>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -81,9 +82,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="#" className="applybut">
+                    {/* <Link to="/" className="applybut">
                       Check Here
-                    </a>
+                    </Link> */}
                   </div>
                 </div>
               </div>
@@ -109,9 +110,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="#" className="applybut">
+                    {/* <Link to="/" className="applybut">
                       See All Cases
-                    </a>
+                    </Link> */}
                   </div>
                 </div>
               </div>
