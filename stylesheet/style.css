@@ -329,7 +329,7 @@ button.accordion-button[aria-expanded*=true] {
 {
     width: 100%;
     height: auto;
-    min-height: 80vh;
+    min-height: 90vh;
     border: 0;
     background: transparent!important;
 }
@@ -354,8 +354,9 @@ button.accordion-button[aria-expanded*=true] {
  /* .skiptranslate {
     display: none;
 } */
+
 /* sidebar */
-.sidebarbg
+/* .sidebarbg
 {
     background-color: #ff9c50!important;
     color: black!important;
@@ -373,4 +374,37 @@ button.accordion-button[aria-expanded*=true] {
 {
     text-decoration: none!important;
     color: #000000!important;
+} */
+
+/* Sidebar */
+.fixfontcolor
+{
+    color:black;
+    padding: 5px;
+}
+.sidebar-bg
+{
+    background-color: #FFB27D!important;
+    width: 100%;
+    height: auto;
+    min-width: 200px;
+    max-width: 300px;
+}
+.linkactive
+{
+    background-color: #FF6D00!important;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white!important;
+}
+@media screen and (max-width: 768px) {
+    .sidebar-bg
+    {
+        max-width: 300px;
+        padding: 0%;
+    }
 }
