@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from "react-router-dom"
+import Link from 'next/link'
 // import dynamic from "next/dynamic"; const BasicModal = dynamic(() => import("../../Modal/BasicModal"), { ssr: false, });
 export default function index() {
   return (
@@ -131,8 +131,9 @@ export default function index() {
             </div>
                 
                 
-            
-            <button type="button" className="btn-sih btn text-center m-3 right">Proceed</button>
+            <Link href="/ci-forms/page2">
+            <button type="button" className="btn-sih btn text-center m-3 right">Proceed to Page2</button>
+            </Link>
             <br />
         </div>
     </div>
