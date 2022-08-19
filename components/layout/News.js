@@ -1,40 +1,28 @@
 import React, { useEffect, useState } from 'react'
-import { BsFillPersonFill } from 'react-icons/bs';
-import { BiTimeFive } from 'react-icons/bi';
-import Image from "next/image";
+import axios from 'axios';
 
-
-export default function News({newsData}) {
-  const [ data, setData] = useState([])
-  const fetchData = () => {
+export default function News() {
+  const [data , setData] = useState([""]);
+  const src = `https://images.livemint.com/img/2022/04/21/600x338/long_covid_symptoms_1650540839356_1650540839488.jpg`;
+  useEffect(()=>{
+    axios.get("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json")
     fetch("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json")
     .then((res)=>{
       return res.json();
-    }).then((data)=>{
-      setData(data)
+    }).then((response)=>{
+      console.log(response)
+      console.log(response.articles)
+      const x = response.articles;
+      console.log(x)
+      setData(x)
     })
-}
-useEffect(()=>{
-  fetchData();
-},[])
-
-  const {articles = []} = newsData;
+  },[])
   return (
-    <div className='newsPage'>
-      <h1 className='text-center p-5'>LATEST NEWS ABOUT COCHLEAR IMPLANT</h1>
-      <div className='news'>
-      {articles.map((item,key) =>(
-        <div key={item} className="newsCard m-2">
-          <Image src={item.urlToImage} alt="Snow"/>
-          <p className='top-left'><BiTimeFive/> {item.publishedAt}</p>
-          
-          <a href={item.url} className="bottom-left">{item.title}</a>
-          <p className='top-right'><BsFillPersonFill/> {item.author}</p>
-      </div>
-      ))}
-      </div>
-      <button className='btn-sih text-center'>Read more news</button>
-      
-    </div>
+   <div>
+    <h2 className='text-center p-5'>LATEST NEWS</h2>
+
+    <h2 className='text-center p-5'>READ MORE</h2>
+   </div>
+    
   )
 }
