@@ -408,3 +408,31 @@ table {
     }
     
   }
+
+  /* Footer */
+
+  #footer
+  {
+    background-color: #C86D2F;
+    color: white;
+    /* padding: 2.5vh; */
+    font-family: Georgia;
+  }
+  .footerparahead
+  {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .text-muted
+  {
+    color: lightgray!important;
+  }
+  .reacticonfix
+  {
+    font-size: 25px!important;
+    justify-content: space-between!important;
+  }
+  #iconsize
+  {
+    font-size: 25px!important;
+  }
