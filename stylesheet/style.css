@@ -5,6 +5,7 @@ body{
 /* Primary Css */
 :root {
     --main: #FF6D00;
+    --secondary: #FCE6D6;
     --white: #ffffff;
   }
   .main-color{
@@ -407,4 +408,19 @@ table {
         flex-direction: column;
     }
     
+  }
+
+  /* Sidebar  */
+  .sidebar{
+    background-color: var(--secondary);
+    min-height: 100vh;
+  }
+  .sidebar-card{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: var(--secondary);
+  }
+  .sidebar-card-inner{
+    width: 280px;
   }
