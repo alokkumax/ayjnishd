@@ -1,5 +1,12 @@
 import React from "react";
 import cardimg from "../../images/hero-vector-act.png";
+import task from '../../images/task.svg'
+import time from '../../images/time.svg'
+import list from '../../images/list.svg'
+import app from '../../images/app.svg'
+import destination from '../../images/destination.svg'
+import checkup from '../../images/checkup.svg'
+import scheduleImg from '../../images/schedule.svg'
 import Image from "next/image";
 import Link from 'next/link'
 // import styles from "../styles/CiApplication.module.css"
@@ -17,7 +24,7 @@ const CiApplication = () => {
               <div className="card">
                 <Image
                   className="card-img-top"
-                  src={cardimg}
+                  src={app}
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -43,7 +50,7 @@ const CiApplication = () => {
               <div className="card">
                 <Image
                   className="card-img-top"
-                  src={cardimg}
+                  src={list}
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -70,7 +77,7 @@ const CiApplication = () => {
               <div className="card">
                 <Image
                   className="card-img-top"
-                  src={cardimg}
+                  src={time}
                   alt="Card image cap"
                 />
                 <div className="card-body">
@@ -96,7 +103,7 @@ const CiApplication = () => {
               <div className="card">
                 <Image
                   className="card-img-top"
-                  src={cardimg}
+                  src={checkup}
                   alt="Card image cap"
                 />
                 <div className="card-body">
