@@ -5,8 +5,8 @@ import SideBar from '../components/layout/SideBar'
 export default function aboutPage() {
   return (
     <div>
-    aboutPage
-    <SideBar/>
+      <Navbar/>
+      <SideBar/>
     </div>
   )
 }

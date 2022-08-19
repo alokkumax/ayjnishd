@@ -1,6 +1,7 @@
 import React from "react";
 import cardimg from "../../images/hero-vector-act.png";
 import Image from "next/image";
+import Link from 'next/link'
 // import styles from "../styles/CiApplication.module.css"
 const CiApplication = () => {
   return (
@@ -28,9 +29,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="#" className="applybut">
-                      Apply Here
-                    </a>
+                    <Link href="/ci-forms" className="applybut">
+                      <button className="btn btn-sih">Apply Here ...</button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -54,9 +55,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="#" className="applybut">
-                      Check Here
-                    </a>
+                    <Link href="/ci-forms" className="applybut">
+                      <button className="btn btn-sih">Check Here ...</button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -81,9 +82,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="#" className="applybut">
-                      Check Here
-                    </a>
+                    <Link href="/ci-forms" className="applybut">
+                      <button className="btn btn-sih">Check Here ...</button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -109,9 +110,9 @@ const CiApplication = () => {
                     learn about promoting business through social media.
                   </p>
                   <div className="fixapplybut">
-                    <a href="#" className="applybut">
-                      See All Cases
-                    </a>
+                    <Link href="/ci-forms" className="applybut">
+                      <button className="btn btn-sih">Check Here ...</button>
+                    </Link>
                   </div>
                 </div>
               </div>

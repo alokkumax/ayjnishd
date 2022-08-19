@@ -186,9 +186,9 @@ const Faq = () => {
                         className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${key}`}
+                        data-bs-target={`#collapsescheme${key}`}
                         aria-expanded="true"
-                        aria-controls={`collapse${key}`}
+                        aria-controls={`#collapsescheme${key}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
@@ -197,8 +197,8 @@ const Faq = () => {
                     </h2>
 
                     <div
-                      id={`collapse${key}`}
-                      className="accordion-collapse collapse show"
+                      id={`collapsescheme${key}`}
+                      className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
                     >
@@ -230,9 +230,9 @@ const Faq = () => {
                         className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${item.id}`}
+                        data-bs-target={`#collapseinstitute${item.id}`}
                         aria-expanded="true"
-                        aria-controls={`collapse${item.id}`}
+                        aria-controls={`collapseinstitute${item.id}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
@@ -241,7 +241,7 @@ const Faq = () => {
                     </h2>
 
                     <div
-                      id={`collapse${item.id}`}
+                      id={`collapseinstitute${item.id}`}
                       className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
@@ -274,9 +274,9 @@ const Faq = () => {
                         className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${item.id}`}
+                        data-bs-target={`#collapseproduct${item.id}`}
                         aria-expanded="true"
-                        aria-controls={`collapse${item.id}`}
+                        aria-controls={`collapseproduct${item.id}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
@@ -285,7 +285,7 @@ const Faq = () => {
                     </h2>
 
                     <div
-                      id={`collapse${item.id}`}
+                      id={`collapseproduct${item.id}`}
                       className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
@@ -318,9 +318,9 @@ const Faq = () => {
                         className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target={`#collapse${item.id}`}
+                        data-bs-target={`#collapseEligibility${item.id}`}
                         aria-expanded="true"
-                        aria-controls={`collapse${item.id}`}
+                        aria-controls={`collapseEligibility${item.id}`}
                       >
                         <i className="fa fa-circle" id="faiconcolorfaqdrop"></i>
                         <span>&nbsp;&nbsp;</span>
@@ -329,7 +329,7 @@ const Faq = () => {
                     </h2>
 
                     <div
-                      id={`collapse${item.id}`}
+                      id={`collapseEligibility${item.id}`}
                       className="accordion-collapse collapse"
                       aria-labelledby="headingOne"
                       data-bs-parent="#accordionExample"
