@@ -42,7 +42,7 @@ export default function page2() {
                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""/>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlSelect1">Degree of Hearing Loss - Select One</label>
+                    <label htmlFor="exampleFormControlSelect1">Degree of Hearing Loss - Select One</label>
                     <select className="form-control" id="exampleFormControlSelect1">
                     <option>Mild</option>
                     <option>Moderate</option>
@@ -52,7 +52,7 @@ export default function page2() {
                     </select>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlSelect2">Type of Hearing Loss - Select One</label>
+                    <label htmlFor="exampleFormControlSelect2">Type of Hearing Loss - Select One</label>
                     <select className="form-control" id="exampleFormControlSelect2">
                     <option>Conductive</option>
                     <option>Mixed</option>
@@ -79,7 +79,7 @@ export default function page2() {
                     <input type="name" className="form-control" id="exampleInputReligion2" placeholder=""/>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlSelect3">Category</label>
+                    <label htmlFor="exampleFormControlSelect3">Category</label>
                     <select className="form-control" id="exampleFormControlSelect3">
                     <option>General</option>
                     <option>OBC</option>
@@ -89,7 +89,7 @@ export default function page2() {
                     </select>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlSelect4">Educational Qualification</label>
+                    <label htmlFor="exampleFormControlSelect4">Educational Qualification</label>
                     <select className="form-control" id="exampleFormControlSelect4">
                     <option>10th</option>
                     <option>12th</option>
@@ -104,16 +104,16 @@ export default function page2() {
                     <input type="name" className="form-control" id="exampleInputProfession2" placeholder=""/>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlTextarea1">Permanent Address</label>
+                    <label htmlFor="exampleFormControlTextarea1">Permanent Address</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlTextarea2">Address for Communication (With pin code)</label>
+                    <label htmlFor="exampleFormControlTextarea2">Address for Communication (With pin code)</label>
                     <textarea className="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
                 </div>
                 <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck1"/>
-                    <label className="form-check-label" for="defaultCheck1">
+                    <label className="form-check-label" htmlFor="defaultCheck1">
                     If Want The Communication Address Same As Permanent Address Then Select The Checkbox
                     </label>
                 </div>
@@ -151,7 +151,7 @@ export default function page2() {
                     <input type="name" className="form-control" id="exampleInputReligion3" placeholder=""/>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlSelec5t">Category</label>
+                    <label htmlFor="exampleFormControlSelec5t">Category</label>
                     <select className="form-control" id="exampleFormControlSelect5">
                     <option>General</option>
                     <option>OBC</option>
@@ -161,7 +161,7 @@ export default function page2() {
                     </select>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlSelect6">Educational Qualification</label>
+                    <label htmlFor="exampleFormControlSelect6">Educational Qualification</label>
                     <select className="form-control" id="exampleFormControlSelect6">
                     <option>10th</option>
                     <option>12th</option>
@@ -176,16 +176,16 @@ export default function page2() {
                     <input type="name" className="form-control" id="exampleInputProfession3" placeholder=""/>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlTextarea3">Permanent Address</label>
+                    <label htmlFor="exampleFormControlTextarea3">Permanent Address</label>
                     <textarea className="form-control" id="exampleFormControlTextarea3" rows="3"></textarea>
                 </div>
                 <div className="form-group m-3">
-                    <label for="exampleFormControlTextarea4">Address for Communication (With pin code)</label>
+                    <label htmlFor="exampleFormControlTextarea4">Address for Communication (With pin code)</label>
                     <textarea className="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
                 </div>
                 <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="defaultCheck2"/>
-                    <label className="form-check-label" for="defaultCheck2">
+                    <label className="form-check-label" htmlFor="defaultCheck2">
                     If Want The Communication Address Same As Permanent Address Then Select The Checkbox
                     </label>
                 </div>
