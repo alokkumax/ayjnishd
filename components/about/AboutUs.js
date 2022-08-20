@@ -16,7 +16,7 @@ export default function AboutUs() {
               &nbsp;Visit Our Official Website
             </a>
           </Link>
-          <div className="col-8">
+          <div className="col-lg-8 col-12">
             <p>
               Ali Yavar Jung National Institute for the Hearing Handicapped
               (AYJNIHH) was established on 9th August 1983. It is an autonomous
@@ -24,12 +24,7 @@ export default function AboutUs() {
               Government of India, New Delhi. The Institute is located at Bandra
               (West), Mumbai – 400 050.
             </p>
-          </div>
-          <div className="col-4">
-            <Image src={aboutimg1} width="300px" height="200px" alt="aboutus" />
-          </div>
-        </div>
-        <p>
+            <p>
           Regional Centres of the Institute have been established at Kolkata
           (1984), New Delhi (1986), Secundarabad (1986) and Bhubaneshwar (1986-
           in association with Government of Orissa). These are centres aimed at
@@ -44,6 +39,13 @@ export default function AboutUs() {
           persons with sensory (hearing and vision), physical and mental
           disabilities.
         </p>
+          </div>
+          <div className="col-lg-4 col-12">
+            <Image src={aboutimg1} width="300px" height="200px" alt="aboutus" />
+          </div>
+        </div>
+        
+        
         <p>
           Under this programme, 24 DDRCs were allotted to AYJNIHH. All the 24
           DDRCs, on completion of successful establishment and running for three
@@ -52,7 +54,7 @@ export default function AboutUs() {
         </p>
         <p>
           Composite Regional Center (CRC), Bhopal is a service model initiated
-          by the Ministry of Social Justice & Empowerment, Govt. of India,
+          by the Ministry of Social Justice &amp; Empowerment, Govt. of India,
           established on 14th August, 2000. The Center is functioning under the
           administrative control of AYJNIHH since February, 2006. An one more
           CRC at Ahmedabad, Gujarat was established on 16th Aug, 2011 and this
@@ -61,7 +63,7 @@ export default function AboutUs() {
         <h1>OBJECTIVES OF THE INSTITUTE</h1>
         <br />
         <div className="row">
-          <div className="col-8">
+          <div className="col-lg-8 col-12">
             <p>
               <b>Manpower Development:</b>
               To deal with the various aspects of rehabilitation of the Hearing
@@ -72,18 +74,7 @@ export default function AboutUs() {
               hearing handicapped and technology development have been carried
               out.
             </p>
-          </div>
-          <div className="col-4">
-            <Image
-              className="aboutimg"
-              src={aboutimg2}
-              width="300px"
-              height="200px"
-              alt="aboutus2"
-            />
-          </div>
-        </div>
-        <p>
+            <p>
           <b>Educational Programmes:</b> By studying the existing school for the
           deaf, curriculum followed, methods of teaching etc. and supplementing
           or strengthening them by way of improving existing educational
@@ -96,6 +87,19 @@ export default function AboutUs() {
           rehabilitative procedures. films and audio visuals on vocational
           training and job placement, etc. are being developed.
         </p>
+          </div>
+          <div className="col-lg-4 col-12">
+            <Image
+              className="aboutimg"
+              src={aboutimg2}
+              width="300px"
+              height="200px"
+              alt="aboutus2"
+            />
+          </div>
+        </div>
+        
+        
         <p>
           <b>Community Programme:</b> Identification and intervention, home
           bound training, correspondence training and also tele–rehabilitation
