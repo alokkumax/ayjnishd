@@ -40,15 +40,15 @@ import App from '../components/algorithm'
 export default function Home({data}) {
   return (
     <div>
-      <App/>
-      {/* <Navbar active="Home"/>
+      {/* <App/> */}
+      <Navbar active="Home"/>
       <Hero/>
       <Kpi data={data}/>
       <Info/>
       <News/>
       <CiApplication/>
       <Faq/>
-      <Footer/> */}
+      <Footer/>
     </div>
   )
 } 
