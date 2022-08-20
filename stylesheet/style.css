@@ -488,3 +488,9 @@ table {
     text-decoration: none;
     color: #C86D2F;
   }
+  /* CHatBOT */
+  .rw-conversation-container .rw-header {
+    background-color: #f1670c;
+  }
+  .rw-launcher{background-color: #f1670c;}
+
