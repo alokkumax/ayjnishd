@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import Slider from "react-slick";
+import Image from 'next/image';
 async function fetchNews() {
   const news = (
     await axios.get(
@@ -29,7 +30,7 @@ export default function News() {
     return (
       <div key={i}>
         <a href={n.url}>
-          <img  src={n.urlToImage} alt="" width={600} height={300} />
+          <Image src={n.urlToImage} alt="" width={600} height={300} />
         </a>
         <p className="text-center mt-2">{n.title}</p>
         <p className="text-center ">{n.description}</p>
