@@ -16,6 +16,12 @@ body{
     color: #FFFFFF;
     border-radius: 10px;
 }
+.btn-sih-other{
+    background-color: #FFB27D;
+    color: black;
+    border-radius: 4px;
+    font-weight: 500;
+}
 .btn-sih:hover{
     background-color: #fc8931;
     color: #FFFFFF;
@@ -76,7 +82,11 @@ model-viewer{width: 400px; height: 500px; margin: 0 auto;}
 /* Hero Section  */
 
 .hero-bg{
-    background-image: url("../images/hero-bg.png");
+    background: url("../images/bg2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 @media(max-width:990px){
     .hero-text{
@@ -239,7 +249,7 @@ model-viewer{width: 400px; height: 500px; margin: 0 auto;}
 }
 #faq
 {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 30px;
 }
 .faqcontainer

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import hero_vector_art from "../../images/hero-vector-act.png";
+import checkup from "../../images/checkup.svg";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 const AR = dynamic(() => import("./AR"), { ssr: false });
@@ -25,13 +26,13 @@ export default function Hero() {
               </div>
             </div>
             <div className="hero-bg-img col-10 col-sm-8 col-lg-5 d-column-center">
-              <AR />
+              <Image src={checkup} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"/> 
               <Link href="/check">
                 <button type="button" className="btn-sih btn text-center m-1">
                   Check Hearing Ability
                 </button>
               </Link>
-              {/* <img src={hero_vector_art} className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"/> */}
+              
             </div>
           </div>
         </div>

@@ -79,11 +79,14 @@
 "@next/swc-linux-x64-musl@12.2.3":
   "integrity" "sha512-jMBD0Va6fInbPih/dNySlNY2RpjkK6MXS+UGVEvuTswl1MZr+iahvurmshwGKpjaRwVU4DSFMD8+gfWxsTFs1Q=="
   "resolved" "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-12.2.3.tgz"
+<<<<<<< HEAD
   "version" "12.2.3"
 
 "@next/swc-win32-x64-msvc@12.2.3":
   "integrity" "sha512-huSNb98KSG77Kl96CoPgCwom28aamuUsPpRmn/4s9L0RNbbHVSkp9E6HA4yOAykZCEuWcdNsRLbVVuAbt8rtIw=="
   "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.2.3.tgz"
+=======
+>>>>>>> a6753ec (Fixed Styling Of FAQ And Cards)
   "version" "12.2.3"
 
 "@nodelib/fs.scandir@2.1.5":

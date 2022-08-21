@@ -6,22 +6,6 @@ import { HiMenu } from "react-icons/hi";
 import Link from 'next/link'
 
 export default function Navbar(props) {
-  
-  //Google Translator Code Here:
-  useEffect(() => {
-    var addScript = document.createElement('script');
-    addScript.setAttribute('src', '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');
-    document.body.appendChild(addScript);
-    window.googleTranslateElementInit = googleTranslateElementInit;
-}, [])
-    var duplicate_google_translate_counter = 0;
-    const googleTranslateElementInit = () => {
-        if (duplicate_google_translate_counter == 0) {
-          new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages : "en,hi,mr,te,ta"}, 'google_translate_element');
-      }
-      duplicate_google_translate_counter++;
-    }
-//Google function ends here
 
   return (
     <div>
@@ -260,24 +244,7 @@ export default function Navbar(props) {
                   </li>
                 </ul>
               </li>
-              <div className="translate" id="google_translate_element" ></div>
-              {/* google div ends here */}
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <AiOutlineSound />
-                </a>
-              </li>
             </ul>
-            {/* <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form> */}
           </div>
         </div>
       </nav>

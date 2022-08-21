@@ -45,7 +45,7 @@ export default function Home({data}) {
       <Hero/>
       <Kpi data={data}/>
       <Info/>
-      <News/>
+      {/* <News/> */}
       <CiApplication/>
       <Faq/>
       <Footer/>
