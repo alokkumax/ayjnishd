@@ -22,6 +22,11 @@ body{
     border-radius: 4px;
     font-weight: 500;
 }
+.btn-sih-link{
+    color: var(--main);
+    font-weight: 500;
+    cursor: pointer;
+}
 .btn-sih:hover{
     background-color: #fc8931;
     color: #FFFFFF;

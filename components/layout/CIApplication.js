@@ -31,9 +31,7 @@ const CiApplication = () => {
                   <br />
                   <h5 className="card-title">Start Your Application</h5>
                   <p className="card-text">
-                    This is the second part of the SMM starter pack series of
-                    articles. If you made it this far, you must be willing to
-                    learn about promoting business through social media.
+                  Fill up the Online form under revised ADIP Scheme and guidelines – 2014' under Enrollment for Cochlear Implant Surgery and attach the scanned copy of supporting documents OR download the Application form from the same link &amp; send the filled Application with all the required supporting documents to <Link href="/contact/contactus"><span className="btn-sih-link">here</span></Link>
                   </p>
                   <div className="fixapplybut">
                     <Link href="/ci-forms" className="applybut">
@@ -52,16 +50,17 @@ const CiApplication = () => {
               <div className="card">
                 <Image
                   className="card-img-top"
-                  src={list}
+                  src={time}
                   alt="Card image cap"
                 />
                 <div className="card-body">
                   <br />
-                  <h5 className="card-title">Waitlisted for CI Surgery</h5>
+                  <h5 className="card-title">Cases Scheduled</h5>
                   <p className="card-text">
-                    This is the second part of the SMM starter pack series of
-                    articles. If you made it this far, you must be willing to
-                    learn about promoting business through social media.
+                  Click to view the new provisional list of identified beneficiaries along with their demographic
+                  details for Cochlear implantation under CSR initiative of REC Foundation. The process of assigning
+                  hospital, issuing of approval letter and dispatch of implants is underway. At present 50 beneficiaries
+                  are identified. 
                   </p>
                   <div className="fixapplybut">
                     <Link href="/ci-forms" className="applybut">
@@ -81,16 +80,15 @@ const CiApplication = () => {
               <div className="card">
                 <Image
                   className="card-img-top"
-                  src={time}
+                  src={list}
                   alt="Card image cap"
                 />
                 <div className="card-body">
                   <br />
-                  <h5 className="card-title">Cases Scheduled for CI Surgery</h5>
+                  <h5 className="card-title">Details of cases undergone</h5>
                   <p className="card-text">
-                    This is the second part of the SMM starter pack series of
-                    articles. If you made it this far, you must be willing to
-                    learn about promoting business through social media.
+                  Details of cases undergone Cochlear Implant Surgery
+                  ( MIS Reports which are only for internal use are Password protected ). Click on the link to view summary of all cases statewise or yearwise subjected by ADIP and CSR. You can also check Post Rehabilitation/Intervention by ADIPCI yearwise.
                   </p>
                   <div className="fixapplybut">
                     <Link href="/ci-forms" className="applybut">
@@ -114,11 +112,9 @@ const CiApplication = () => {
                 />
                 <div className="card-body">
                   <br />
-                  <h5 className="card-title">Details of cases undergone</h5>
+                  <h5 className="card-title">Pre and Post CI Surgery</h5>
                   <p className="card-text">
-                    This is the second part of the SMM starter pack series of
-                    articles. If you made it this far, you must be willing to
-                    learn about promoting business through social media.
+                    Click here to see an overview of Cochlear Implant, components or working, who can benefit from it or contraindications for it. Other than that click to see process, advantages, riska and limitations of CI. You can also check whether your child is a good candidate for the same or not, by clicking here.
                   </p>
                   <div className="fixapplybut">
                     <Link href="/ci-forms" className="applybut">
