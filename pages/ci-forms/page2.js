@@ -8,7 +8,7 @@ export default function index() {
     <div>
         <Navbar active="About"/>
         <div className="d-flex">
-            <div className="sidebar"><SideBar/></div>
+            {/* <div className="sidebar"><SideBar/></div> */}
             <div className="w-100">
               <Sidebar_Btn/>
               <Page2/>
