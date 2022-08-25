@@ -281,9 +281,16 @@ model-viewer{width: 400px; height: 500px; margin: 0 auto;}
     margin-bottom: 20px;
     font-weight: bold;
 }
+a{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: none;
+    color: inherit;
+}
 .faqmenu
 {
-    gap: 35px;
     max-width: fit-content;
     background-color: #FCE6D6;
     border-radius: 10px;

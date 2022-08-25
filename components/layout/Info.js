@@ -13,7 +13,7 @@ const Info = () => {
             surgically implanted inside the{" "}
           </h5>
           <Link href="/about/CochlearImplant">
-          <button className="button alignLeft">Read More</button>
+          <a target="_blank" className="button alignLeft">Read More</a>
           </Link>
         </div>
 
@@ -34,7 +34,7 @@ const Info = () => {
             family. This impact is seen on every aspect of life
           </h5>
           <Link href="/about/ImpactCi">
-          <button className="button alignRight">Read More</button>
+          <a  target="_blank" className="button alignRight">Read More</a>
           </Link>
         </div>
       </div>

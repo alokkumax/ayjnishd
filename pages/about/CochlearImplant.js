@@ -6,32 +6,29 @@ const CochlearImplant = () => {
   return (
     <>
       <div className="container">
-        <h1>What is a cochlear implant?</h1>
-        <p>
-          The cochlear implant is a prosthetic device, a part of which is
-          surgically implanted inside the cochlea. Cochlear implants have been
-          found to be beneficial for children and adults with severe to profound
-          hearing loss and steeply sloping hearing loss who do not benefit
-          adequately with hearing aids but have an intact auditory nerve. While
-          a hearing aid provides amplified sound energy to the ear, the cochlear
-          implant directly provides electrical stimulation to the nerve endings
-          in the cochlea.
-        </p>
-        <h3>How does a cochlear implant work?</h3>
-        <p>
-          A Cochlear implant has an externally worn device which includes the
-          microphone, speech processor and transmitting coil and an internal
-          device which is surgically implanted in the skull and cochlea. The
-          internal device consists of the receiver stimulator package and the
-          electrodes.
-        </p>
         <div className="row">
-          <p>
-            <b>
-              Given below is a picture of a Nucleus cochlear implant device:
-            </b>
-          </p>
-          <div className="col-sm">
+          <div className="col-md-8 col-12">
+            <h1>What is a cochlear implant?</h1>
+            <p>
+              The cochlear implant is a prosthetic device, a part of which is
+              surgically implanted inside the cochlea. Cochlear implants have
+              been found to be beneficial for children and adults with severe to
+              profound hearing loss and steeply sloping hearing loss who do not
+              benefit adequately with hearing aids but have an intact auditory
+              nerve. While a hearing aid provides amplified sound energy to the
+              ear, the cochlear implant directly provides electrical stimulation
+              to the nerve endings in the cochlea.
+            </p>
+            <h3>How does a cochlear implant work?</h3>
+            <p>
+              A Cochlear implant has an externally worn device which includes
+              the microphone, speech processor and transmitting coil and an
+              internal device which is surgically implanted in the skull and
+              cochlea. The internal device consists of the receiver stimulator
+              package and the electrodes.
+            </p>
+          </div>
+          <div className="col-md-4 col-12 d-column-center">
             <Image
               src={Cochlear1}
               width="500px"
@@ -39,15 +36,9 @@ const CochlearImplant = () => {
               alt="cochlear1"
             />
           </div>
-          <div className="col-sm">
-            <Image
-              src={Cochlear2}
-              width="500px"
-              height="250px"
-              alt="cochlear2"
-            />
-          </div>
         </div>
+        <div className="row">
+        <div className="col-md-8 col-12">
         <h3>Working of a cochlear implant:</h3>
         <ul>
           <li>Sound is picked up by a microphone placed on the ear.</li>
@@ -83,7 +74,12 @@ const CochlearImplant = () => {
             of the cochlea. (Given below is a picture of an electrode array. The
             black bands are the electrodes)
           </li>
-        </ul>
+        </ul></div>
+
+        <div className="col-md-4 col-12 d-column-center">
+          <Image src={Cochlear2} width="500px" height="250px" alt="cochlear2" />
+        </div>
+      </div>
       </div>
     </>
   );
