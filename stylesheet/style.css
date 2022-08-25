@@ -489,8 +489,15 @@ table {
     color: #C86D2F;
   }
   /* CHatBOT */
-  .rw-conversation-container .rw-header {
-    background-color: #f1670c;
-  }
-  .rw-launcher{background-color: #f1670c;}
-
+    .rw-launcher{
+        background-color: var(--main) !important;
+    }
+    .rw-conversation-container .rw-header{
+        background-color: var(--main) !important;
+    }
+    .rw-conversation-container .rw-client {
+        background-color: var(--main) !important;
+    }
+    .rw-conversation-container .rw-send .rw-send-icon-ready{
+        fill: var(--main) !important;
+    } 
