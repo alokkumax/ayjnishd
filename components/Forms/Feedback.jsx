@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import { Button, notification } from "antd";
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export default function Feedback() {
   const [formData, setFormData] = useState({
@@ -23,18 +25,24 @@ export default function Feedback() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    try {
-      axios
-        .post("https://ayjnishd-backend.herokuapp.com/feedback", {
-          formData,
-        })
-        .then(() => {
-          setLoading(false);
-          alert("done");
+    axios
+      .post(`${BACKEND_URL}/feedback`, {
+        formData,
+      })
+      .then(() => {
+        setLoading(false);
+        notification.success({
+          message: "Feedback Submitted",
+          placement: "bottomLeft",
         });
-    } catch {
-      setLoading(false);
-    }
+      })
+      .catch(() => {
+        setLoading(false);
+        notification.error({
+          message: "Failed to Submit",
+          placement: "bottomLeft",
+        });
+      });
   };
 
   return (
@@ -42,7 +50,9 @@ export default function Feedback() {
       <h4 className="main-color">GIVE YOUR FEEDBACK HERE</h4>
       <form onSubmit={handleSubmit}>
         <div className="form-group m-3">
-          <label htmlFor="exampleInputName1 my-1">Name</label>
+          <label htmlFor="exampleInputName1 my-1">
+            Name<span className="main-color">*</span>
+          </label>
           <input
             required
             onChange={handleChange}
@@ -54,7 +64,9 @@ export default function Feedback() {
           />
         </div>
         <div className="form-group m-3">
-          <label htmlFor="exampleInputEmail1">Email address</label>
+          <label htmlFor="exampleInputEmail1">
+            Email address<span className="main-color">*</span>
+          </label>
           <input
             required
             onChange={handleChange}
@@ -67,7 +79,9 @@ export default function Feedback() {
           />
         </div>
         <div className="form-group m-3">
-          <label htmlFor="exampleInputNumber1 my-1">Contact Number</label>
+          <label htmlFor="exampleInputNumber1 my-1">
+            Contact Number<span className="main-color">*</span>
+          </label>
           <input
             required
             onChange={handleChange}
@@ -81,6 +95,7 @@ export default function Feedback() {
         <div className="form-group m-3">
           <label htmlFor="exampleInputNumber2 my-1">
             Case Number of the Cochlear Implantee
+            <span className="main-color">*</span>
           </label>
           <input
             required
@@ -94,7 +109,7 @@ export default function Feedback() {
         </div>
         <div className="form-group m-3">
           <label htmlFor="exampleInputName2 my-1">
-            Name of the Cochlear Implantee
+            Name of the Cochlear Implantee<span className="main-color">*</span>
           </label>
           <input
             required
@@ -108,7 +123,7 @@ export default function Feedback() {
         </div>
         <div className="form-group m-3">
           <label htmlFor="exampleFormControlTextarea1">
-            Feedback about the surgery
+            Feedback about the surgery<span className="main-color">*</span>
           </label>
           <textarea
             required
@@ -146,20 +161,22 @@ export default function Feedback() {
             onChange={handleChange || ""}
           />
         </div>
-        {loading ? (
-          <button className="btn btn-primary" type="button" disabled>
-            <span
-              className="spinner-border spinner-border-sm"
-              role="status"
-              aria-hidden="true"
-            ></span>{" "}
-            Submitting...
-          </button>
-        ) : (
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
-        )}
+        <div className="text-center">
+          {loading ? (
+            <button className="btn btn-primary" type="button" disabled>
+              <span
+                className="spinner-border spinner-border-sm"
+                role="status"
+                aria-hidden="true"
+              ></span>{" "}
+              Submitting...
+            </button>
+          ) : (
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          )}
+        </div>
       </form>
     </div>
   );
