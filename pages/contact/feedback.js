@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar  from "../../components/layout/Navbar"
 import SideBar from '../../components/layout/SideBar'
 import Sidebar_Btn from '../../components/layout/Sidebar-Btn'
-import Feedback from '../../components/Feedback/Feedback'
+import Feedback from '../../components/Forms/Feedback'
 export default function index() {
     const arr=["Contact Us","Feedback","Regional Centers"]
     const arr_links=["","feedback","regionalcenters"]
