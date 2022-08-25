@@ -2,11 +2,15 @@ import React from "react";
 import Cochlear1 from "../../images/cochlean1.png";
 import Cochlear2 from "../../images/cochlean2.png";
 import Image from "next/image";
+import Navbar from "../../components/layout/Navbar";
+import Footer from "../../components/layout/Footer";
 const CochlearImplant = () => {
   return (
     <>
-      <div className="container">
+    <Navbar active="Home"/>
+      <div className="container my-5">
         <div className="row">
+          
           <div className="col-md-8 col-12">
             <h1>What is a cochlear implant?</h1>
             <p>
@@ -81,6 +85,7 @@ const CochlearImplant = () => {
         </div>
       </div>
       </div>
+      <Footer/>
     </>
   );
 };

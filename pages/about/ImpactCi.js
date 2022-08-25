@@ -2,10 +2,13 @@ import React from "react";
 import aboutimg1 from "../../images/about.png";
 import aboutimg2 from "../../images/about2.jpg";
 import Image from "next/image";
+import Navbar from "../../components/layout/Navbar";
+import Footer from "../../components/layout/Footer";
 const ImpactCi = () => {
   return (
     <>
-      <div className="container">
+    <Navbar active="Home"/>
+      <div className="container my-5">
         <div className="row">
           <div className="col-md-8 col-12">
             <h1>IMPACT OF CI</h1>
@@ -76,6 +79,7 @@ const ImpactCi = () => {
         </div>
         <br />
       </div>
+      <Footer/>
     </>
   );
 };
