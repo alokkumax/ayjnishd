@@ -535,3 +535,14 @@ table {
     height: 70vh;
 }
 
+/* Phone Feature */
+#phoneicon
+{
+    font-size: 40px;
+    color: #C86D2F;
+    border: 1px solid #C86D2F;
+    border-radius: 50%;
+    background-color: #C86D2F;
+    color: black;
+    padding: 5px;
+}

@@ -5,6 +5,7 @@ import { AiOutlineSound } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
 import Link from "next/link";
+import {FiPhoneCall} from 'react-icons/fi';
 
 const message = {
   EnglishText:
@@ -367,6 +368,64 @@ export default function Navbar(props) {
                   </li>
                 </ul>
               </li>
+              
+              {/* Add  */}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <FiPhoneCall
+                   id="phoneicon"
+                    onClick={() => {
+                      if (speechSynthesis.speaking) {
+                        speechSynthesis.cancel();
+                      }
+                    }}
+                  />
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a href="tel:9883505330"
+                      className="dropdown-item"
+                      // value="eng"
+                      // onClick={(event) => {
+                      //   textToSpeech(event.target.value);
+                      // }}
+                    >
+                      Call Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      href="mailto:soumwadeepguha@gmail.com"
+                      value="hin"
+                      // onClick={(event) => {
+                      //   textToSpeech(event.target.value);
+                      // }}
+                    >
+                      Mail Us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="dropdown-item"
+                      href="#"
+                      value="hin"
+                      // onClick={(event) => {
+                      //   textToSpeech(event.target.value);
+                      // }}
+                    >
+                      Chat With Us
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            {/* Phone End */}
             </ul>
           </div>
         </div>
