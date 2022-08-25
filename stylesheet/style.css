@@ -488,3 +488,16 @@ table {
     text-decoration: none;
     color: #C86D2F;
   }
+
+  .rw-launcher{
+    background-color: var(--main) !important;
+}
+.rw-conversation-container .rw-header{
+    background-color: var(--main) !important;
+}
+.rw-conversation-container .rw-client {
+    background-color: var(--main) !important;
+}
+.rw-conversation-container .rw-send .rw-send-icon-ready{
+    fill: var(--main) !important;
+}
