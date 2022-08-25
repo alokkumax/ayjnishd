@@ -12,7 +12,7 @@ export default function Kpi({ data }) {
         setRes(data)
     },[])
   return (
-    <div className="container row d-row-center col-12 m-auto">
+    <div className="container row d-row-center col-12 m-auto mt-5">
         <div id="kpi1" className="col-lg-3 col-sm-6 col-12 d-row-center my-3">
             <Image src={Kpi1} alt="" height={80} width={80}></Image>
             <div className='d-col-center kpi1-text'>
