@@ -6,6 +6,26 @@ import { BsSearch } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
 import Link from "next/link";
 
+const message = {
+  EnglishText:
+    "What is a cochlear implant? The cochlear implant is a prosthetic device, a part of which is surgically implanted inside the cochlea. Cochlear implants have been found to be beneficial for children and adults with severe to profound hearing loss and steeply sloping hearing loss who do not benefit adequately with hearing aids but have an intact auditory nerve. While a hearing aid provides amplified sound energy to the ear, the cochlear implant directly provides electrical stimulation to the nerve endings in the cochlea. How does a cochlear implant work? A Cochlear implant has an externally worn device which includes the microphone, speech processor and transmitting coil and an internal device which is surgically implanted in the skull and cochlea. The internal device consists of the receiver stimulator package and the electrodes.",
+
+  HindiText:
+    "कर्णावत प्रत्यारोपण क्या है? कॉक्लियर इम्प्लांट एक प्रोस्थेटिक डिवाइस है जिसका एक हिस्सा कोक्लीअ के अंदर शल्य चिकित्सा द्वारा प्रत्यारोपित किया जाता है। कर्णावर्त प्रत्यारोपण उन बच्चों और वयस्कों के लिए फायदेमंद पाया गया है,जिन्हें गंभीर से गंभीर हानि और तेजी से झुकी हुई श्रवण हानि होती है, जो श्रवण यंत्रों के साथ पर्याप्त रूप से लाभान्वित नहीं होते हैं, लेकिन एक अक्षुण्ण श्रवण तंत्रिका है। जबकि एक हियरिंग एड कान को प्रवर्धित ध्वनि ऊर्जा प्रदान करता है, कर्णावर्त प्रत्यारोपण सीधे कोक्लीअ में तंत्रिका अंत को विद्युत उत्तेजना प्रदान करता है। कॉक्लियर इम्प्लांट कैसे काम करता है? कॉक्लियर इम्प्लांट में एक बाहरी रूप से पहना जाने वाला उपकरण होता है जिसमें माइक्रोफ़ोन, स्पीच प्रोसेसर और ट्रांसमिटिंग कॉइल और एक आंतरिक उपकरण शामिल होता है जिसे शल्य चिकित्सा द्वारा खोपड़ी और कोक्लीअ में प्रत्यारोपित किया जाता है। आंतरिक उपकरण में रिसीवर उत्तेजक पैकेज और इलेक्ट्रोड होते हैं।",
+};
+
+const textToSpeech = (lang) => {
+  console.log(lang);
+  if (lang == "eng") {
+    let utterance = new SpeechSynthesisUtterance(message.EnglishText);
+    speechSynthesis.speak(utterance);
+  } else if (lang == "hin") {
+    let utterance = new SpeechSynthesisUtterance(message.HindiText);
+    utterance.voice = speechSynthesis.getVoices().at(12);
+    speechSynthesis.speak(utterance);
+  }
+};
+
 export default function Navbar(props) {
   //Google Translator Code Here:
   useEffect(() => {
@@ -305,7 +325,7 @@ export default function Navbar(props) {
                   <BsSearch />
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item dropdown">
                 <a
                   className="nav-link"
                   href="#"
@@ -313,8 +333,39 @@ export default function Navbar(props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <AiOutlineSound />
+                  <AiOutlineSound
+                    onClick={() => {
+                      if (speechSynthesis.speaking) {
+                        speechSynthesis.cancel();
+                      }
+                    }}
+                  />
                 </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <button
+                      className="dropdown-item"
+                      value="eng"
+                      onClick={(event) => {
+                        textToSpeech(event.target.value);
+                      }}
+                    >
+                      English
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="dropdown-item"
+                      href="#"
+                      value="hin"
+                      onClick={(event) => {
+                        textToSpeech(event.target.value);
+                      }}
+                    >
+                      Hindi
+                    </button>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
