@@ -509,7 +509,29 @@ table {
 .rw-conversation-container .rw-send .rw-send-icon-ready{
     fill: var(--main) !important;
 }
+/* PDF Renderer  */
+#PdfViewer
+{
+    min-height: 100vh;
+    /* padding: 30px; */
+    background-color: #ffffff;
+}
+.pdf_iframe
+{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    border: 0;
+    background: transparent!important;
+}
+@media(max-width:550px){
+    .pdf-renderer{
+        margin:auto;
+        width: 90%;
+    }
+}
 .map-container {
     width: 100%;
     height: 70vh;
 }
+

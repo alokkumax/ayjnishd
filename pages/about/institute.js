@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutUs from '../../components/about/AboutUs'
 import CochlearImplant from '../../components/about/CochlearImplant'
 import Navbar from "../../components/layout/Navbar"
 import SideBar from '../../components/layout/SideBar'
@@ -15,8 +16,9 @@ export default function institute() {
               <div className="sidebar"><SideBar heading1="About" heading2="Institute" arr={arr} alink="/about" alinks={arr_links}/></div>
               <div className="w-100">
                 <Sidebar_Btn/>
+                <AboutUs/>
               </div>
-              {/* <CochlearImplant/> */}
+              
           </div> 
       </div>
     )
