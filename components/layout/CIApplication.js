@@ -31,7 +31,7 @@ const CiApplication = () => {
                   <br />
                   <h5 className="card-title">Start Your Application</h5>
                   <p className="card-text">
-                  Fill up the Online form under revised ADIP Scheme and guidelines – 2014' under Enrollment for Cochlear Implant Surgery and attach the scanned copy of supporting documents OR download the Application form from the same link &amp; send the filled Application with all the required supporting documents to <Link href="/contact/contactus"><span className="btn-sih-link">here.</span></Link>
+                  Fill up the Online form under revised ADIP Scheme and guidelines – 2014`&apos;` under Enrollment for Cochlear Implant Surgery and attach the scanned copy of supporting documents OR download the Application form from the same link &amp; send the filled Application with all the required supporting documents to <Link href="/contact/contactus"><span className="btn-sih-link">here.</span></Link>
                   </p>
                   <div className="fixapplybut">
                     <Link href="/ci-forms" className="applybut">
