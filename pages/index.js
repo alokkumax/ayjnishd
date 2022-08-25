@@ -9,6 +9,7 @@ import News from "../components/layout/News";
 import SideBar from "../components/layout/SideBar";
 import Footer from "../components/layout/Footer";
 import App from '../components/algorithm'
+import Maps from "../components/layout/Maps";
 
 //KPI from restAPI
 // const api = 'https://ayjnishd-backend.herokuapp.com/kpi';
@@ -45,6 +46,7 @@ export default function Home({data}) {
       <Hero/>
       <Kpi data={data}/>
       <Info/>
+      <Maps/>
       {/* <News/> */}
       <CiApplication/>
       <Faq/>
