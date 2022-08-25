@@ -1,12 +1,37 @@
-import {React, useEffect} from "react";
+import { React, useEffect } from "react";
 import Image from "next/image";
 import logo from "../../images/logo-sih.png";
 import { AiOutlineSound } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Navbar(props) {
+  //Google Translator Code Here:
+  useEffect(() => {
+    var addScript = document.createElement("script");
+    addScript.setAttribute(
+      "src",
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    document.body.appendChild(addScript);
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
+  var duplicate_google_translate_counter = 0;
+  const googleTranslateElementInit = () => {
+    if (duplicate_google_translate_counter == 0) {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages:
+            "en,hi,mr,te,ta,as,bn,brx,doi,gu,kn,ks,gom,mai,ml,mni,ne,or,pa,sa,sat,sd,ur",
+        },
+        "google_translate_element"
+      );
+    }
+    duplicate_google_translate_counter++;
+  };
+  //Google function ends here
 
   return (
     <div>
@@ -15,7 +40,7 @@ export default function Navbar(props) {
           <Link href="/">
             <Image src={logo} width={120} alt="" height={50} />
           </Link>
-          
+
           <h1 className="navbar-brand mx-3 text-dark" href="#">
             AYJNISHD
           </h1>
@@ -38,15 +63,23 @@ export default function Navbar(props) {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end ">
               <li className="nav-item">
                 <Link href="/">
-                <a className={`nav-link ${props.active==="Home"?"active":""}`} aria-current="page" href="#">
-                  Home
-                </a>
+                  <a
+                    className={`nav-link ${
+                      props.active === "Home" ? "active" : ""
+                    }`}
+                    aria-current="page"
+                    href="#"
+                  >
+                    Home
+                  </a>
                 </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
                   href="about"
-                  className={`nav-link dropdown-toggle ${props.active==="About"?"active":""}`}
+                  className={`nav-link dropdown-toggle ${
+                    props.active === "About" ? "active" : ""
+                  }`}
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -56,7 +89,9 @@ export default function Navbar(props) {
                 <ul className="dropdown-menu">
                   <li>
                     <Link href="/about/aboutthescheme">
-                      <a type="button" className="dropdown-item">About the Scheme</a>
+                      <a type="button" className="dropdown-item">
+                        About the Scheme
+                      </a>
                     </Link>
                   </li>
                   <li>
@@ -91,7 +126,9 @@ export default function Navbar(props) {
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${props.active==="Apply"?"active":""}`}
+                  className={`nav-link dropdown-toggle ${
+                    props.active === "Apply" ? "active" : ""
+                  }`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -102,70 +139,76 @@ export default function Navbar(props) {
                 <ul className="dropdown-menu">
                   <li>
                     <Link href="/apply/cienrollment">
-                    <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         CI Surgery Enrollment{" "}
-                    </a>
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/apply/requestforaudiologist">
-                    <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Request for Audiologist
-                    </a>
+                      </a>
                     </Link>
                   </li>
                   {/* <li><hr className="dropdown-divider"/></li> */}
                   <li>
                     <Link href="/apply/empanelment">
-                    <a className="dropdown-item" href="#">
+                      <a className="dropdown-item" href="#">
                         Empanelment of Hospitals
-                    </a>
+                      </a>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${props.active==="Login"?"active":""}`}
+                  className={`nav-link dropdown-toggle ${
+                    props.active === "Login" ? "active" : ""
+                  }`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                >Login                </a>
+                >
+                  Login{" "}
+                </a>
                 <ul className="dropdown-menu">
                   <li>
                     <Link href="/login/surgicalreport">
-                    <a className="dropdown-item" href="#">
-                      Surgical Report
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        Surgical Report
+                      </a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/login/activation">
-                    <a className="dropdown-item" href="#">
-                      Activation &amp; Mapping
-                    </a>
+                    <Link href="/login/activation">
+                      <a className="dropdown-item" href="#">
+                        Activation &amp; Mapping
+                      </a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/login/checkappstatus">
-                    <a className="dropdown-item" href="#">
-                      Check Application Status
-                    </a>
+                    <Link href="/login/checkappstatus">
+                      <a className="dropdown-item" href="#">
+                        Check Application Status
+                      </a>
                     </Link>
                   </li>
                   <li>
-                  <Link href="/login/checkappdetails">
-                    <a className="dropdown-item" href="#">
-                      Check Application Details
-                    </a>
+                    <Link href="/login/checkappdetails">
+                      <a className="dropdown-item" href="#">
+                        Check Application Details
+                      </a>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${props.active==="Contact"?"active":""}`}
+                  className={`nav-link dropdown-toggle ${
+                    props.active === "Contact" ? "active" : ""
+                  }`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -176,30 +219,32 @@ export default function Navbar(props) {
                 <ul className="dropdown-menu">
                   <li>
                     <Link href="/contact/contactus">
-                    <a className="dropdown-item" href="#">
-                      Contact Us
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        Contact Us
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/contact/feedback">
-                    <a className="dropdown-item" href="#">
-                      Feedback
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        Feedback
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/contact/regionalcenters">
-                    <a className="dropdown-item" href="#">
-                      Regional Centres
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        Regional Centres
+                      </a>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${props.active==="Others"?"active":""}`}
+                  className={`nav-link dropdown-toggle ${
+                    props.active === "Others" ? "active" : ""
+                  }`}
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -210,41 +255,45 @@ export default function Navbar(props) {
                 <ul className="dropdown-menu">
                   <li>
                     <Link href="/others/report">
-                    <a className="dropdown-item" href="#">
-                      Report of Events
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        Report of Events
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/others/duration">
-                    <a className="dropdown-item" href="#">
-                      Duration of Therapy
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        Duration of Therapy
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/others/guidance">
-                    <a className="dropdown-item" href="#">
-                      Guidance &amp; Support
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        Guidance &amp; Support
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/others/pre-post">
-                    <a className="dropdown-item" href="#">
-                      Pre &amp; Post Surgery
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        Pre &amp; Post Surgery
+                      </a>
                     </Link>
                   </li>
                   <li>
                     <Link href="/others/ciprocessor">
-                    <a className="dropdown-item" href="#">
-                      CI Processor Manual
-                    </a>
+                      <a className="dropdown-item" href="#">
+                        CI Processor Manual
+                      </a>
                     </Link>
                   </li>
                 </ul>
               </li>
+              {/* Google Translate ID: */}
+              <div id="google_translate_element"></div>
+              <div className="translate" id="google_translate_element"></div>
+              {/* google div ends here */}
               <li className="nav-item">
                 <a
                   className="nav-link"
@@ -253,7 +302,7 @@ export default function Navbar(props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <BsSearch/>
+                  <BsSearch />
                 </a>
               </li>
               <li className="nav-item">

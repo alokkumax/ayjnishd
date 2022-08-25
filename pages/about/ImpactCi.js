@@ -11,7 +11,7 @@ const ImpactCi = () => {
       <div className="container my-5">
         <div className="row">
           <div className="col-md-8 col-12">
-            <h1>IMPACT OF CI</h1>
+            <h2>IMPACT OF CI</h2>
             <br />
             <p>
               Hearing impairment has a significant impact on the child and his
@@ -54,7 +54,7 @@ const ImpactCi = () => {
           </div>
           <br />
           <div className="col-md-8 col-12">
-            <h3>Auditory skills</h3>
+            <h2>Auditory skills</h2>
             <br />
             <p>
               Children with cochlear implants achieve performance levels that

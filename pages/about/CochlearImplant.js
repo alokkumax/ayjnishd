@@ -12,7 +12,7 @@ const CochlearImplant = () => {
         <div className="row">
           
           <div className="col-md-8 col-12">
-            <h1>What is a cochlear implant?</h1>
+            <h2>What is a cochlear implant?</h2>
             <p>
               The cochlear implant is a prosthetic device, a part of which is
               surgically implanted inside the cochlea. Cochlear implants have
@@ -23,7 +23,7 @@ const CochlearImplant = () => {
               ear, the cochlear implant directly provides electrical stimulation
               to the nerve endings in the cochlea.
             </p>
-            <h3>How does a cochlear implant work?</h3>
+            <h2>How does a cochlear implant work?</h2>
             <p>
               A Cochlear implant has an externally worn device which includes
               the microphone, speech processor and transmitting coil and an
@@ -43,7 +43,7 @@ const CochlearImplant = () => {
         </div>
         <div className="row">
         <div className="col-md-8 col-12">
-        <h3>Working of a cochlear implant:</h3>
+        <h2>Working of a cochlear implant:</h2>
         <ul>
           <li>Sound is picked up by a microphone placed on the ear.</li>
           <li>
