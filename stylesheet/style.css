@@ -691,3 +691,9 @@ tr:nth-child(even) {
     color: #515355;
     font-size: 1rem;
 }
+/* Pdf Button */
+#sihbut
+{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
