@@ -7,23 +7,23 @@ import { AiOutlineQuestion } from "react-icons/ai";
 const schemeFaq = [
   {
     id: 1,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "What is a cochlear implant?",
+    des: "The cochlear implant is a prosthetic device, a part of which is surgically implanted inside the cochlea. Cochlear implants have been found to be beneficial for children with severe to profound hearing loss in both ears who do not benefit adequately with hearing aids but have an intact auditory nerve. While a hearing aid provides amplified sound energy to the ear, the cochlear implant directly provides electrical stimulation to the nerve endings in the cochlea",
   },
   {
     id: 2,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "What does the surgery involve?",
+    des: "The surgery for the cochlear implant may take about 1-2 hours. The surgeon makes an incision behind the pinna and then surgically implants the electrodes inside the cochlea and the receiver-stimulator are implanted in the mastoid bone behind the ear. The patient may have to remain in hospital for 2-3 days.",
   },
   {
     id: 3,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "Will a cochlear implant restore normal hearing in children who are deaf?",
+    des: "No, a cochlear implant does not restore normal hearing. It is a communication tool but not a 'cure' for deafness. An implant, supplemented with Speech& Language therapy and Auditory Verbal therapy, can help the children recognize sound, including speech to use it for communication and education purposes.",
   },
   {
     id: 4,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "What sounds can be heard with a cochlear implant?",
+    des: "Your child will probably hear most sounds of medium-to-high loudness. Patients often report that they can hear footsteps, slamming of doors, ringing telephones car engines, barking dogs, crackers, and various other environmental sounds.",
   },
 ];
 const instituteFaq = [
@@ -51,40 +51,40 @@ const instituteFaq = [
 const productfaq = [
   {
     id: 1,
-    faq: "What is a Product?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "My child’s hearing aid(s) did not help him/her very much. Will a cochlear implant be better?",
+    des: "It is difficult to predict how each child will do with a cochlear implant, because everyone is different. During the cochlear implant evaluation, the audiologist and/or cochlear implant surgeon can discuss realistic expectations with you. Associated disabilities can also be a deterrent to development of Speech & Language.",
   },
   {
     id: 2,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "Can a MRI be done with cochlear implant?",
+    des: "Yes, with restrictions. The cochlear implant internal device has a magnet that can be removed so that you can go through certain MRI machines. If you need to have a MRI, discuss your options with your Doctor/CI centre.",
   },
   {
     id: 3,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "Can my child’s X-ray or CT scan possible with cochlear implant?",
+    des: "Your child will probably hear most sounds of medium-to-high loudness. Patients often report that they can hear footsteps, slamming of doors, ringing telephones car engines, barking dogs, crackers, and various other environmental sounds.",
   },
   {
     id: 4,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "Will my child outgrow the internal device and require a new one?",
+    des: "No, the cochlea is fully formed at birth and the skull structures achieve almost full growth by age 2. The electrode array is designed to accommodate skull growth in children.",
   },
 ];
 const Eligibilityfaq = [
   {
     id: 1,
-    faq: "What is a Eligibilty?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "Can children with cochlear implants identify environmental noises as well as speech?",
+    des: "Cochlear implants provide a wide range of sound information. Performance in speech perception testing varies among individuals. With time and training, most patients understand more speech than with hearing aids and many communicate by telephone or enjoy music.",
   },
   {
     id: 2,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "Can children with cochlear implants swim, shower and participate in sports?",
+    des: "Yes, people with implants can swim, shower and participate in virtually all types of sport activities when they are not wearing the external equipment. Just as you would remove your hearing aids, you would take off the outside components (the processor and headpiece) before going swimming or getting your hair wet. Participation in all other athletic activities is unrestricted, although protective headgear is always recommended.",
   },
   {
     id: 3,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "Can the implantee hear immediately after surgery ?",
+    des: "After the surgery, one has to wait for the scar to heal. This period is approximately 2 to 3 weeks. During this time, the implantee cannot hear through the implant because the external part is not coupled to it yet. After this healing period is over, the implant and processor are programmed or mapped for the first time. This is called the ‘switch on’.",
   },
   {
     id: 4,
