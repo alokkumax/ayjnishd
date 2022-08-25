@@ -1,6 +1,6 @@
 body{
     position: relative;
-    top:0;
+    top:0!important;
 }
 /* Primary Css */
 :root {
@@ -381,6 +381,12 @@ button.accordion-button[aria-expanded*=true] {
     border: transparent;
     padding: 8px;
     color: rgb(0, 0, 0) !important;
+ }
+ .goog-te-banner-frame{
+    display: none!important;
+    border:none!important;
+    box-shadow:none!important;
+    -webkit-box-shadow:none!important;
  }
  /* .skiptranslate {
     display: none;
