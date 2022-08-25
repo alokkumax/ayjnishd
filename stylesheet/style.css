@@ -507,3 +507,7 @@ table {
 .rw-conversation-container .rw-send .rw-send-icon-ready{
     fill: var(--main) !important;
 }
+.map-container {
+    width: 100%;
+    height: 70vh;
+}
