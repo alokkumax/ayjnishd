@@ -3,6 +3,8 @@ import Link from "next/link";
 import { ImLinkedin2 } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
+
+
 const Footer = () => {
   return (
     <>
@@ -15,27 +17,50 @@ const Footer = () => {
               </h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">
+                  {/* <Link href="https://socialjustice.nic.in/">
+                    <a target="_blank" href="">
+                      <p className="nav-link p-0 text-muted">
+                        Ministry of Social justice and empowerment
+                      </p>
+                    </a>
+                  </Link> */}
+                  <Link
+                    href="https://socialjustice.nic.in/"
+                    rel="noopener noreferrer"
+                  >
+                    <a
+                      className="nav-link p-0 text-muted links-footer"
+                      id=""
+                      target="_blank"
+                    >
                       Ministry of Social justice and empowerment
-                    </p>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">AYJNISHD</p>
+                  <Link
+                    href="http://adipcochlearimplant.in/index.aspx/"
+                    rel="noopener noreferrer"
+                  >
+                    <a
+                      className="nav-link p-0 text-muted links-footer"
+                      id=""
+                      target="_blank"
+                    >
+                      AYJNISHD
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">
+                  <Link href="/check">
+                    <p className="nav-link p-0 text-muted links-footer">
                       Check your hearing
                     </p>
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
                   <Link href="/">
-                    <p className="nav-link p-0 text-muted">
+                    <p className="nav-link p-0 text-muted links-footer">
                       Jobs of Hearing Impaired
                     </p>
                   </Link>
@@ -48,75 +73,106 @@ const Footer = () => {
               </h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">
+                  <Link href="/ci-forms">
+                    <p className="nav-link p-0 text-muted links-footer">
                       Terms & Conditions
                     </p>
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
                   <Link href="/">
-                    <p className="nav-link p-0 text-muted">Privacy Policy</p>
-                  </Link>
-                </li>
-                <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">
-                      Help to Persons with Disabilities
+                    <p className="nav-link p-0 text-muted links-footer">
+                      Privacy Policy
                     </p>
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">
-                      Help to Persons with Disabilities
+                  <Link href="/apply">
+                    <p className="nav-link p-0 text-muted links-footer">
+                      Apply
+                    </p>
+                  </Link>
+                </li>
+                <li className="nav-item mb-2">
+                  <Link href="/login">
+                    <p className="nav-link p-0 text-muted links-footer">
+                      Login
                     </p>
                   </Link>
                 </li>
               </ul>
             </div>
             <div className="col sm">
-            <h5 className="footerparahead">
-                <b>You Are Visitor Number<br/>5462132</b>
+              <h5 className="footerparahead">
+                <b>
+                  You Are Visitor Number
+                  <br />
+                  5462132
+                </b>
               </h5>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">Feedback</p>
+                  <Link href="/contact/feedback">
+                    <p className="nav-link p-0 text-muted links-footer">
+                      Feedback
+                    </p>
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">Contact Us</p>
+                  <Link href="/contact">
+                    <p className="nav-link p-0 text-muted links-footer">
+                      Contact Us
+                    </p>
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link href="/">
-                    <p className="nav-link p-0 text-muted">Home</p>
+                  <Link href="/others/guidance">
+                    <p className="nav-link p-0 text-muted links-footer">
+                      Guidance & Support
+                    </p>
                   </Link>
                 </li>
               </ul>
             </div>
-            
           </div>
           <hr />
           <div className="row">
             <div className="col sm">
               <p className="footerparahead" id="iconsize">
-                <ImLinkedin2 />&nbsp;&nbsp;
-                <BsTwitter />&nbsp;&nbsp;
-                <ImFacebook/>&nbsp;&nbsp;
+                <Link href="https://twitter.com/ayjnishdd?lang=en">
+                  <a id="" target="_blank">
+                    <BsTwitter/>
+                  </a>
+                </Link>
+                &nbsp;&nbsp;
+                <Link href="#">
+                  <a id="" target="_blank">
+                  <ImLinkedin2 />
+                  </a>
+                </Link>
+                &nbsp;&nbsp;
+                <Link href="https://www.facebook.com/ayjnishdd/">
+                  <a id="" target="_blank">
+                  <ImFacebook/>
+                  </a>
+                </Link>
+                &nbsp;&nbsp;
               </p>
             </div>
             <div className="col sm">
               <p className="footerparahead">
-                A product of <b><i>AYJNISHD</i></b> design by : OrganiCod3rs
+                A product of{" "}
+                <b>
+                  <i>AYJNISHD</i>
+                </b>{" "}
+                design by : OrganiCod3rs
               </p>
             </div>
             <div className="col sm">
               <p className="footerparahead">
-                © 2015 Coachler Implant under ADIP Scheme of GOI.<br/>All Rights
-                Reserved.
+                © 2015 Coachler Implant under ADIP Scheme of GOI.
+                <br />
+                All Rights Reserved.
               </p>
             </div>
           </div>

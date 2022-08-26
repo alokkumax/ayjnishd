@@ -40,6 +40,10 @@ body {
     color: #FFFFFF;
     border-radius: 10px;
 }
+.links-footer{
+    cursor: pointer;
+    color:lightgray !important;
+}
 
 .d-column-center {
     display: flex;
