@@ -213,13 +213,6 @@ export default function Navbar(props) {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/login/activation">
-                      <a className="dropdown-item" href="#">
-                        Activation &amp; Mapping
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
                     <Link href="/login/checkappstatus">
                       <a className="dropdown-item" href="#">
                         Check Application Status
