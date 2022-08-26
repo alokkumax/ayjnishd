@@ -41,12 +41,16 @@ const App = () => {
   else user_said = document.getElementById("content").innerText;
   //console.log(user_said);
   getResponse(user_said);
-  if (name == "ask_cochlear")
-    response =
-      "The cochlear implant is a prosthetic device, a part of which is surgically implanted inside the cochlea.\nIt is a device to be used by someone with almost complete hearing loss. While a hearing aid provides amplified sound energy to the ear,\n the cochlear implant directly provides electrical stimulation to the nerve endings in the cochlea.";
-  else if (name == "bot_job")
-    response =
-      "I am here to help you with your queries. You can ask me about:\n 1. What is cochlear implant?\n 2. How to apply?";
+  if(name=="ask_cochlear")
+  response="The cochlear implant is a prosthetic device, a part of which is surgically implanted inside the cochlea.\nIt is a device to be used by someone with almost complete hearing loss. While a hearing aid provides amplified sound energy to the ear,\n the cochlear implant directly provides electrical stimulation to the nerve endings in the cochlea."
+ else if(name=="bot_job")
+  response="I am here to help you with your queries. You can ask me about:\n 1. What is cochlear implant?\n 2. How to apply?"
+ else if(name=="ask_how_to_apply")
+  response="You can apply following these easy steps:\n1. Fill up http://adipcochlearimplant.in/Application-Instruction.aspx online form.\n2. Attach the scanned copy of supporting documents.\n3. You can also download the Application form from the same link & send the filled Application with all the required supporting documents to following address:\n\nAli Yavar Jung National Institute of Speech and Hearing Disabilities (Divyangjan)\nK.C. Marg, Bandra (W) Reclamation\nMumbai - 400 050\nMaharashtra"
+ else if(name=="ask_who_is_eligible")
+  response="The eligibility criteria for the ADIP scheme is:\n1. Must be an Indian citizen.\n2. Age of the child:\n(a) Child with congenital deafness (since birth) upto 5 years as on 31st December in the current year.\n(b) Upto 12 years for child with post lingual\ndeafness i.e. after development of speech & language.\n3. Degree of hearing loss : Severe to Profound sensorineural hearing loss in both ears.\n4. Other details can be found at http://adipcochlearimplant.in/ADIP_PDF/CI%20Candidacys.pdf"
+ else if(name=="ask_contact")
+  response="You can contact us at 0353-123456"
 
   return (
     <>
