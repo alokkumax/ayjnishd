@@ -113,7 +113,7 @@ export default function App() {
                   {questions[currentQuestion].answerOptions.map(
                     (answerOption, index) => (
                       <>
-                        <div class="d-grid gap-2">
+                        <div className="d-grid gap-2">
                           <center><button
                             id="choose"
                             key={index}
