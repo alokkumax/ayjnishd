@@ -13,13 +13,13 @@ const Login = () => {
           </div>
           <div className="mb-3">
             <label for="name" className="form-label">
-              Your Name
+              Applicant's Name
             </label>
             <input type="text" className="form-control" required />
           </div>
           <center>
             <button type="submit" id="submitbut" className="btn btn-primary">
-              Submit
+              Login
             </button>
           </center>
         </form>
