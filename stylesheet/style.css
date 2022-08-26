@@ -728,3 +728,17 @@ tr:nth-child(even) {
     min-height: 30px;
     text-align: center;
 }
+/* Login Css */
+#loginformcss
+{
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+#submitbut
+{
+    background-color: #fc8931;
+}
