@@ -87,7 +87,7 @@ model-viewer {
 .nav-link.active {
     background-color: var(--main);
     color: white;
-    width: 12vh;
+    /* width: 12vh; */
     padding: 1vh;
     border-radius: 10px;
     text-align: center;
@@ -705,13 +705,29 @@ tr:nth-child(even) {
 }
 
 /* Speech-to-text  */
-#mictext {
-    font-weight: bold !important;
-    font-size: 1.5rem !important;
-
+/* Voice Assist */
+.miccontent
+{
+    padding-top: 10px;
 }
-
-.startbut {
+#mictext
+{
+    color: red;
+    font-size: 64px!important;
+    font-weight: bold !important;
+}
+#micimg2
+{
+    font-size: 100px;
+}
+#micimgflex
+{
+    display: flex!important;
+    justify-content: center;
+    font-size: 100px;
+    flex-direction: column;
+}
+/* .startbut {
     border: 1px solid #fd7e14 !important;
     background-color: #fce6d6 !important;
     color: black !important;
@@ -722,8 +738,16 @@ tr:nth-child(even) {
     padding: 5px;
     cursor: pointer;
     margin-left: 10px;
+} */
+#micbtn
+{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
-
 .ptransript {
     font-size: 1.5rem !important;
     font-weight: bold !important;
@@ -731,9 +755,30 @@ tr:nth-child(even) {
     border: 1px solid #fd7e14 !important;
     border-radius: 20px;
     padding: 10px;
-    min-height: 30px;
-    text-align: center;
+    min-height: 60px;
+    text-align: left;
 }
+.ptransript2 {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    margin: 10px;
+    border: 1px solid #fd7e14 !important;
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 60px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+/* pre
+{
+    width: 100%;
+    height: auto;
+    max-width: min-content;
+    min-height: fit-content;
+    flex-direction: column;
+    display: flex;
+} */
 
 /* Login Css */
 #loginformcss {
@@ -755,7 +800,7 @@ tr:nth-child(even) {
     /* background-color: #efbb96; */
     width: 100%;
     height: 100vh;
-    padding-top: 10cm;
+    padding-top: 4cm;
 }
 .checkh4
 {
@@ -810,6 +855,16 @@ tr:nth-child(even) {
    }
    #checkques
    {
-    padding-top: 4.5cm;
+    padding-top: 2cm;
    }
+   /* .ptransript2
+   {
+    display: flex;
+    flex-direction: column-reverse;
+   } */
+   /* #micimgflex
+   {
+    flex-direction: column-reverse;
+    justify-content: center;
+   }  */
 }
