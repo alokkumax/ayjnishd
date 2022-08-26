@@ -372,7 +372,7 @@ export default function Navbar(props) {
               </li>
               
               {/* Add  */}
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link"
                   href="#"
@@ -426,7 +426,7 @@ export default function Navbar(props) {
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
             {/* Phone End */}
             </ul>
           </div>
