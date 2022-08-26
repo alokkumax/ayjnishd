@@ -11,7 +11,6 @@ import Footer from "../components/layout/Footer";
 import App from '../components/algorithm'
 import Maps from "../components/layout/Maps";
 import Text_to_Speech from "../components/layout/Text-to-Speech"
-import FAB from "../components/layout/FAB";
 // KPI from restAPI
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 console.log(BACKEND_URL);
