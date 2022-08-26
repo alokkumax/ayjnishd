@@ -24,7 +24,7 @@ class MyDocument extends Document {
                   {
                     initPayload: "/greet",
                     customData: { language: "en" },
-                    socketUrl: "https://rasa-chatbot-sih.herokuapp.com",
+                    socketUrl: "https://chatbot-sih-new.herokuapp.com",
                     // add other props here
                     params: {storage: "session"},
                     title: "ADIP Bot",
