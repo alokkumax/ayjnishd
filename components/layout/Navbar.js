@@ -1,7 +1,7 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "../../images/logo-sih.png";
-import { AiOutlineSound } from "react-icons/ai";
+import { AiOutlineSound, AiOutlineAudio } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
 import Link from "next/link";
@@ -29,6 +29,16 @@ const textToSpeech = (lang) => {
 
 export default function Navbar(props) {
   //Google Translator Code Here:
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
+  
   useEffect(() => {
     var addScript = document.createElement("script");
     addScript.setAttribute(
@@ -331,10 +341,12 @@ export default function Navbar(props) {
                     className="nav-link"
                     href="#"
                     role="button"
+                    onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}
                     // data-bs-toggle="dropdown"
                     // aria-expanded="false"
+                    title="Audio"
                   >
-                    <BsSearch />
+                    <AiOutlineAudio size={18} />
                   </a>
                 </Link>
               </li>
@@ -345,8 +357,10 @@ export default function Navbar(props) {
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  title="Read-aloud"
                 >
                   <AiOutlineSound
+                    size={18}
                     onClick={() => {
                       if (speechSynthesis.speaking) {
                         speechSynthesis.cancel();
