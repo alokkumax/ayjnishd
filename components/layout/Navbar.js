@@ -59,12 +59,18 @@ export default function Navbar(props) {
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <Link href="/">
-            <Image src={logo} width={120} alt="" height={50} />
+            <a className="navimglink">
+              <Image src={logo} width={120} alt="" height={50} />
+            </a>
           </Link>
 
-          <h1 className="navbar-brand mx-3 text-dark" href="#">
-            AYJNISHD
-          </h1>
+          <Link href="/">
+            <a className="navimglink">
+              <h1 className="navbar-brand mx-3 text-dark" href="#">
+                AYJNISHD
+              </h1>
+            </a>
+          </Link>
           <button
             className="navbar-toggler text-dark"
             type="button"
