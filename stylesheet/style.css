@@ -697,3 +697,34 @@ tr:nth-child(even) {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+/* Speech-to-text  */
+#mictext
+{
+  font-weight: bold!important;
+  font-size: 1.5rem!important;
+
+}
+.startbut
+{
+  border: 1px solid #fd7e14!important;
+  background-color: #fce6d6!important;
+  color: black!important;
+  font-weight: bold!important;
+  font-size: 1.5rem!important;
+  border-radius: 10px;
+  min-width: 100px;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.ptransript
+{
+    font-size: 1.5rem!important;
+    font-weight: bold!important;
+    margin: 10px;
+    border: 1px solid #fd7e14!important;
+    border-radius: 20px;
+    padding: 10px;
+    min-height: 30px;
+    text-align: center;
+}

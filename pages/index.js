@@ -10,7 +10,7 @@ import SideBar from "../components/layout/SideBar";
 import Footer from "../components/layout/Footer";
 import App from '../components/algorithm'
 import Maps from "../components/layout/Maps";
-
+import Text_to_Speech from "../components/layout/Text-to-Speech"
 // KPI from restAPI
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 console.log(BACKEND_URL);
@@ -33,6 +33,7 @@ export default function Home({data}) {
       <Hero/>
       <Kpi data={data}/>
       <Info/>
+      {/* <Text_to_Speech/> */}
       <Maps/>
       {/* <News/> */}
       <CiApplication/>
