@@ -1,12 +1,21 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
 export default function Appstatus() {
-  return (
-    <div>
-        <div className="app-status-table m-5">
-            <center>
-                <h3>Your Application Status</h3>
-                <table>
+    const [data, setData] = useState([])
+    useEffect(() => {
+        axios.get("https://ayjnishd-backend-sih.herokuapp.com/ci")
+            .then((res) => {
+                console.log(res.data[0])
+                setData(res.data[0])
+            })
+    }, [])
+    return (
+        <div>
+            <div className="app-status-table m-5">
+                <center>
+                    <h3>Your Application Status</h3>
+                    <table>
                         <thead>
                             {/* <tr className='row'>
                         <th className='col-1'>Sl. No</th>
@@ -18,33 +27,29 @@ export default function Appstatus() {
 
                             <tr className='row'>
                                 <td className='col-lg-4 col-6'>Name</td>
-                                <td className='col-lg-8 col-6'>Akash Avasthi</td>
+                                <td className='col-lg-8 col-6'>{data.name}</td>
                             </tr>
                             <tr className='row'>
                                 <td className='col-lg-4 col-6'>Registration ID</td>
-                                <td className='col-lg-8 col-6'>12547</td>
+                                <td className='col-lg-8 col-6'>{data.id}</td>
                             </tr>
                             <tr className='row'>
                                 <td className='col-lg-4 col-6'>Status</td>
-                                <td className='col-lg-8 col-6'>Accepted</td>
+                                <td className='col-lg-8 col-6'>{data.status}</td>
                             </tr>
                             <tr className='row'>
                                 <td className='col-lg-4 col-6'>Appointment Date</td>
-                                <td className='col-lg-8 col-6'>5th September</td>
+                                <td className='col-lg-8 col-6'>{data.date_alloted}</td>
                             </tr>
                             <tr className='row'>
-                                <td className='col-lg-4 col-6'>Venue City</td>
-                                <td className='col-lg-8 col-6'>Coimbatore</td>
-                            </tr>
-                            <tr className='row'>
-                                <td className='col-lg-4 col-6'>Venue State</td>
-                                <td className='col-lg-8 col-6'>Tamil Nadu</td>
+                                <td className='col-lg-4 col-6'>Venue</td>
+                                <td className='col-lg-8 col-6'>{data.state}</td>
                             </tr>
                         </tbody>
-                    </table> 
-                </center>   
+                    </table>
+                </center>
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 

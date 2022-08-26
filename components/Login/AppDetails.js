@@ -1,12 +1,13 @@
 import React from 'react'
 
 export default function AppDetails() {
-  return (
-    <div>
-        <div className="app-status-table m-5">
-            <center>
-                <h3>Your Application Status</h3>
-                <table>
+
+    return (
+        <div>
+            <div className="app-status-table m-5">
+                <center>
+                    <h3>Your Application Status</h3>
+                    <table>
                         <thead>
                             {/* <tr className='row'>
                         <th className='col-1'>Sl. No</th>
@@ -45,10 +46,10 @@ export default function AppDetails() {
                                 <td className='col-lg-8 col-6'>Mild</td>
                             </tr>
                         </tbody>
-                    </table> 
-                </center>   
+                    </table>
+                </center>
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
