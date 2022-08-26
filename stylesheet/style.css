@@ -126,7 +126,7 @@ model-viewer {
 /* Hero Section  */
 
 .hero-bg {
-    background: url("../public/bg2.png") no-repeat center center fixed;
+    background: url("./bg2.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -891,8 +891,8 @@ tr:nth-child(even) {
     margin: auto;
     display: block;
 }
+
 /* colorfix */
-#colorfix
-{
+#colorfix {
     color: var(--main);
 }
