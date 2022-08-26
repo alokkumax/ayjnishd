@@ -44,7 +44,7 @@ export default function News() {
   console.log(news);
   return (
     <div>
-      <h2 className="text-center p-5">LATEST NEWS</h2>
+      <h2 className="text-center p-5" id="colorfix">LATEST NEWS</h2>
       <Slider className="mb-5" {...settings}>{news}</Slider>
     </div>
   );

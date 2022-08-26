@@ -7,7 +7,7 @@ const Info = () => {
     <div>
       <div className="vector1 div1 d-row-center">
         <div className="textDiv">
-          <h2 className="alignLeft">COCHLEAR IMPLANT</h2>
+          <h2 className="alignLeft" id="colorfix">COCHLEAR IMPLANT</h2>
           <h5 className="description alignLeft">
             The cochlear implant is a prosthetic device, a part of which is
             surgically implanted inside the{" "}
