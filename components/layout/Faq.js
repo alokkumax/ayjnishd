@@ -88,8 +88,8 @@ const Eligibilityfaq = [
   },
   {
     id: 4,
-    faq: "What is a Payment Gateway?",
-    des: "A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
+    faq: "Are there risks in cochlear implant surgery for children ?",
+    des: "Risk is inherent in any surgery requiring general anesthesia. However, the surgical risks for cochlear implantation are minimal and most patients require only a short period of hospital stay and have no surgical complications. Approximately 5% may have surgical complications.A payment gateway is an ecommerce service that processes online payments for online as well as offline businesses. Payment gateways help accept payments by transferring key information from their merchant websites to issuing banks, card associations and online wallet players.",
   },
 ];
 const Faq = () => {
