@@ -25,9 +25,9 @@ const App = () => {
     browserSupportsSpeechRecognition
   } = useSpeechRecognition();
   if (!browserSupportsSpeechRecognition) {
-    return <span>Browser doesn&post support speech recognition.</span>;
+    return <span>Browser does not support speech recognition.</span>;
   }
-  var ask_cochlear="Cochlera implants are"
+  var response=""
   var user_said=""
   if(document.getElementById('content')==null)
     user_said=""
@@ -35,6 +35,12 @@ const App = () => {
     user_said=document.getElementById('content').innerText;
   //console.log(user_said);
  getResponse(user_said);
+ if(name=="ask_cochlear")
+  response="The cochlear implant is a prosthetic device, a part of which is surgically implanted inside the cochlea.\nIt is a device to be used by someone with almost complete hearing loss. While a hearing aid provides amplified sound energy to the ear,\n the cochlear implant directly provides electrical stimulation to the nerve endings in the cochlea."
+ else if(name=="bot_job")
+  response="I am here to help you with your queries. You can ask me about:\n 1. What is cochlear implant?\n 2. How to apply?"
+ 
+  
   return (
     <div>
       <center>
@@ -43,7 +49,7 @@ const App = () => {
       <button onClick={SpeechRecognition.startListening} className="startbut">Start</button>&nbsp;&nbsp;
       <button onClick={SpeechRecognition.stopListening} className="startbut">Stop</button>&nbsp;&nbsp;
       <button onClick={resetTranscript} className="startbut">Reset</button>&nbsp;&nbsp;</center>
-      <h1>{name}</h1>
+      <h3><pre>{response}</pre></h3>
     </div>
   );
 };
