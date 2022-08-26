@@ -3,7 +3,7 @@ import Navbar from "../../components/layout/Navbar"
 import Page2 from "../../components/CI-Forms/Page2"
 import SideBar from '../../components/layout/SideBar'
 import Sidebar_Btn from '../../components/layout/Sidebar-Btn'
-import Ci from '../../components/Forms/CI'
+import Ci from '../../components/Forms/Ci'
 export default function index() {
   const arr = ["CI Enrollment", "Request for Audiologist", "Empanelment of Hospitals"]
   const arr_links = ["cienrollment", "requestforaudiologist", "empanelment"]
