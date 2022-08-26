@@ -25,21 +25,18 @@ export async function getServerSideProps() {
   }
 }
 
-export default function Home({data}) {
+export default function Home({ data }) {
   return (
     <div>
-      {/* <App/> */}
-      <Navbar active="Home"/>
-      <Hero/>
-      <Kpi data={data}/>
-      <Info/>
-      {/* <FAB/> */}
-      {/* <Text_to_Speech/> */}
-      <Maps/>
-      {/* <News/> */}
-      <CiApplication/>
-      <Faq/>
-      <Footer/>
+      <Navbar active="Home" />
+      <Hero />
+      <Kpi data={data} />
+      <Info />
+      <News />
+      <Maps />
+      <CiApplication />
+      <Faq />
+      <Footer />
     </div>
   )
 } 
