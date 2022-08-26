@@ -343,7 +343,7 @@ export default function Navbar(props) {
                     onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}
                     // data-bs-toggle="dropdown"
                     // aria-expanded="false"
-                    title="Audio"
+                    title="Audio Search"
                   >
                     <AiOutlineAudio size={18} />
                   </a>
