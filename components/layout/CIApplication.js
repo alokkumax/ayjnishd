@@ -63,7 +63,7 @@ const CiApplication = () => {
                   are identified. 
                   </p>
                   <div className="fixapplybut">
-                    <Link href="/ci-forms" className="applybut">
+                    <Link href="login/checkappstatus" className="applybut">
                       <button className="btn btn-sih-other">
                         Check Here ...
                       </button>
@@ -91,7 +91,7 @@ const CiApplication = () => {
                   ( MIS Reports which are only for internal use are Password protected ). Click on the link to view summary of all cases statewise or yearwise subjected by ADIP and CSR. You can also check Post Rehabilitation/Intervention by ADIPCI yearwise.
                   </p>
                   <div className="fixapplybut">
-                    <Link href="/ci-forms" className="applybut">
+                    <Link href="/login/detailscases" className="applybut">
                       <button className="btn btn-sih-other">
                         Check Here ...
                       </button>
@@ -117,7 +117,7 @@ const CiApplication = () => {
                     Click here to see an overview of Cochlear Implant, components or working, who can benefit from it or contraindications for it. Other than that click to see process, advantages, riska and limitations of CI. You can also check whether your child is a good candidate for the same or not, by clicking here.
                   </p>
                   <div className="fixapplybut">
-                    <Link href="/ci-forms" className="applybut">
+                    <Link href="/about/postpre" className="applybut">
                       <button className="btn btn-sih-other">
                         Check Here ...
                       </button>
