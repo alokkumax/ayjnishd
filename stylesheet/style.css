@@ -483,6 +483,7 @@ th {
     text-align: left;
     padding: 8px;
 }
+
 tr:nth-child(even) {
     background-color: #fce6d678;
 }
@@ -696,46 +697,46 @@ tr:nth-child(even) {
     color: #515355;
     font-size: 1rem;
 }
+
 /* Pdf Button */
-#sihbut
-{
+#sihbut {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
 /* Speech-to-text  */
-#mictext
-{
-  font-weight: bold!important;
-  font-size: 1.5rem!important;
+#mictext {
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
 
 }
-.startbut
-{
-  border: 1px solid #fd7e14!important;
-  background-color: #fce6d6!important;
-  color: black!important;
-  font-weight: bold!important;
-  font-size: 1.5rem!important;
-  border-radius: 10px;
-  min-width: 100px;
-  padding: 5px;
-  cursor: pointer;
-  margin-left: 10px;
+
+.startbut {
+    border: 1px solid #fd7e14 !important;
+    background-color: #fce6d6 !important;
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+    border-radius: 10px;
+    min-width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px;
 }
-.ptransript
-{
-    font-size: 1.5rem!important;
-    font-weight: bold!important;
+
+.ptransript {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
     margin: 10px;
-    border: 1px solid #fd7e14!important;
+    border: 1px solid #fd7e14 !important;
     border-radius: 20px;
     padding: 10px;
     min-height: 30px;
     text-align: center;
 }
+
 /* Login Css */
-#loginformcss
-{
+#loginformcss {
     max-width: 700px;
     width: 100%;
     height: auto;
@@ -743,7 +744,72 @@ tr:nth-child(even) {
     font-weight: bold;
     text-align: left;
 }
-#submitbut
+
+#submitbut {
+    background-color: #fc8931;
+}
+
+/* Check Hearing */
+#checkques {
+    /* margin-top: 4cm; */
+    /* background-color: #efbb96; */
+    width: 100%;
+    height: 100vh;
+    padding-top: 10cm;
+}
+.checkh4
+{
+    color: #fc8931;
+}
+#choose
+{
+    width:60%;
+    margin: 10px;
+    height: auto;
+    min-height: 60px;
+    border: 1px solid #fc8931;
+    background: transparent;
+    border-radius: 30px;
+}
+#choose:hover
 {
     background-color: #fc8931;
+    color: #fff;
+    cursor: pointer;
+}
+.result
+{
+    /* border: 1px solid #fc8931; */
+    /* background-color: #fc8931; */
+    /* border-radius: 10px; */
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+/* .result:hover
+{
+    background-color: #fc8931;
+    color: white;
+    cursor: pointer;
+} */
+/* Forms */
+#subbut
+{
+    background-color: #fc8931;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fc8931;
+    padding: 10px;
+    /* margin: 10px; */
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+   #choose
+   {
+    width: 90%;
+   }
+   #checkques
+   {
+    padding-top: 4.5cm;
+   }
 }

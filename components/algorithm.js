@@ -85,34 +85,54 @@ export default function App() {
     }
   };
   return (
-    <div className="app">
-      {showResult ? (
-        <div className="result">
-          You might have a {result} symptom of hearing loss. Please consult an
-          audiologist.
-        </div>
-      ) : (
-        <>
-          <div className="question-section">
-            <div className="question-count">
-              <span>Question {currentQuestion + 1}</span>/{questions.length}
-            </div>
-            <div className="question-text">
-              {questions[currentQuestion].questionText}
-            </div>
+    <>
+      <section id="checkques">
+        <center>
+          <div className="app">
+            {showResult ? (
+              <div className="result">
+                <h3>
+                  You might have a {result} symptom of hearing loss. Please
+                  consult an audiologist.
+                </h3>
+              </div>
+            ) : (
+              <>
+                <div className="question-section">
+                  <div className="question-count">
+                    <h4 className="checkh4">
+                      <span>Question {currentQuestion + 1}</span>/
+                      {questions.length}
+                    </h4>
+                  </div>
+                  <div className="question-text">
+                    <h1>{questions[currentQuestion].questionText}</h1>
+                  </div>
+                </div>
+                <div className="answer-section">
+                  {questions[currentQuestion].answerOptions.map(
+                    (answerOption, index) => (
+                      <>
+                        <div className="d-grid gap-2">
+                          <center><button
+                            id="choose"
+                            key={index}
+                            onClick={() =>
+                              handleAnswerOptionClick(answerOption.score)
+                            }
+                          >
+                            {answerOption.option}
+                          </button></center>
+                        </div>
+                      </>
+                    )
+                  )}
+                </div>
+              </>
+            )}
           </div>
-          <div className="answer-section">
-            {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswerOptionClick(answerOption.score)}
-              >
-                {answerOption.option}
-              </button>
-            ))}
-          </div>
-        </>
-      )}
-    </div>
+        </center>
+      </section>
+    </>
   );
 }
