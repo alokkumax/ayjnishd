@@ -1,8 +1,10 @@
 @import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     position: relative;
     top: 0 !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Primary Css */
