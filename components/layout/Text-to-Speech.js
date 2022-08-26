@@ -1,4 +1,5 @@
 
+import 'regenerator-runtime/runtime';
 import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
@@ -24,7 +25,7 @@ const App = () => {
     browserSupportsSpeechRecognition
   } = useSpeechRecognition();
   if (!browserSupportsSpeechRecognition) {
-    return <span>Browser doesn't support speech recognition.</span>;
+    return <span>Browser doesn&post support speech recognition.</span>;
   }
   var ask_cochlear="Cochlera implants are"
   var user_said=""

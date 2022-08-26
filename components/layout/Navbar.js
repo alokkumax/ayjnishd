@@ -315,19 +315,19 @@ export default function Navbar(props) {
               <div id="google_translate_element"></div>
               <div className="translate" id="google_translate_element"></div>
               {/* google div ends here */}
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <Link href="/text-to-speech">
                 <a
                   className="nav-link"
                   href="#"
                   role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  // data-bs-toggle="dropdown"
+                  // aria-expanded="false"
                 >
                   <BsSearch />
                 </a>
                 </Link>
-              </li> */}
+              </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link"
