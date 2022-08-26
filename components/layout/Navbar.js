@@ -309,7 +309,7 @@ export default function Navbar(props) {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/others/pre-post">
+                    <Link href="/others/postpre">
                       <a className="dropdown-item" href="#">
                         Pre &amp; Post Surgery
                       </a>
