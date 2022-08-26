@@ -1,9 +1,13 @@
 import React from "react";
-
-const Login = () => {
+import Link from "next/link"
+const Login = (props) => {
   return (
     <>
       <center>
+        <div className="title">
+          <h3>{props.title}</h3>
+        </div>
+        
         <form id="loginformcss">
           <div className="mb-3">
             <label htmlFor="regno" className="form-label">
@@ -13,14 +17,16 @@ const Login = () => {
           </div>
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
-              Applicant`&apos;`s Name
+              Applicant&apos;s Name
             </label>
             <input type="text" className="form-control" required />
           </div>
           <center>
-            <button type="submit" id="submitbut" className="btn btn-primary">
+            <Link href={props.next}>
+            <a type="submit" id="submitbut" className="btn btn-primary">
               Login
-            </button>
+            </a>
+            </Link>
           </center>
         </form>
       </center>

@@ -15,7 +15,7 @@ export default function checkappdetails() {
               <div className="sidebar"><SideBar heading1="Login" heading2="Check Application Details" arr={arr} alinks={arr_links}/></div>
               <div className="w-100">
                 <Sidebar_Btn/>
-                <Login/>
+                <Login title="Check Application Details" next="/login/checkappdetails-2"/>
               </div>
           </div> 
       </div>

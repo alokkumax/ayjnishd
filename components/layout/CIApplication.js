@@ -34,7 +34,7 @@ const CiApplication = () => {
                   Fill up the Online form under revised ADIP Scheme and guidelines – 2014`&apos;` under Enrollment for Cochlear Implant Surgery and attach the scanned copy of supporting documents OR download the Application form from the same link &amp; send the filled Application with all the required supporting documents to <Link href="/contact/contactus"><span className="btn-sih-link">here.</span></Link>
                   </p>
                   <div className="fixapplybut">
-                    <Link href="/ci-forms" className="applybut">
+                    <Link href="/apply/cienrollment" className="applybut">
                       <button className="btn btn-sih-other">
                         Apply Here ...
                       </button>
@@ -55,7 +55,7 @@ const CiApplication = () => {
                 />
                 <div className="card-body">
                   <br />
-                  <h5 className="card-title">Cases Scheduled</h5>
+                  <h5 className="card-title">See Application Status</h5>
                   <p className="card-text">
                   Click to view the new provisional list of identified beneficiaries along with their demographic
                   details for Cochlear implantation under CSR initiative of REC Foundation. The process of assigning
