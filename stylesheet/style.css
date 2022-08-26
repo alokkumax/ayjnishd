@@ -891,3 +891,8 @@ tr:nth-child(even) {
     margin: auto;
     display: block;
 }
+/* colorfix */
+#colorfix
+{
+    color: var(--main);
+}

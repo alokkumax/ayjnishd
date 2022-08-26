@@ -11,7 +11,7 @@ export default function Maps() {
 function Map() {
   return (
     <div>
-      <h2 className="text-center p-5">Nearest Hospitals</h2>
+      <h2 className="text-center p-5" id="colorfix">Nearest Hospitals Around You </h2>
       <GoogleMap
         zoom={10}
         center={{ lat: 10.894421705347245, lng: 76.99704007070052 }}
