@@ -5,7 +5,7 @@ import { AiOutlineSound } from "react-icons/ai";
 import { BsSearch } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
 import Link from "next/link";
-import {FiPhoneCall} from 'react-icons/fi';
+import { FiPhoneCall } from "react-icons/fi";
 
 const message = {
   EnglishText:
@@ -259,6 +259,16 @@ export default function Navbar(props) {
                       </a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="tel:+917384999670">
+                      <a className="dropdown-item">Call Us</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="mailto:abhinanda361@gmail.com">
+                      <a className="dropdown-item">Mail Us</a>
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li className="nav-item dropdown">
@@ -317,15 +327,15 @@ export default function Navbar(props) {
               {/* google div ends here */}
               <li className="nav-item">
                 <Link href="/text-to-speech">
-                <a
-                  className="nav-link"
-                  href="#"
-                  role="button"
-                  // data-bs-toggle="dropdown"
-                  // aria-expanded="false"
-                >
-                  <BsSearch />
-                </a>
+                  <a
+                    className="nav-link"
+                    href="#"
+                    role="button"
+                    // data-bs-toggle="dropdown"
+                    // aria-expanded="false"
+                  >
+                    <BsSearch />
+                  </a>
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -370,9 +380,9 @@ export default function Navbar(props) {
                   </li>
                 </ul>
               </li>
-              
+
               {/* Add  */}
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link"
                   href="#"
@@ -426,8 +436,8 @@ export default function Navbar(props) {
                     </a>
                   </li>
                 </ul>
-              </li>
-            {/* Phone End */}
+              </li> */}
+              {/* Phone End */}
             </ul>
           </div>
         </div>
