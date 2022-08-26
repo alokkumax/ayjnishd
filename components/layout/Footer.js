@@ -141,19 +141,19 @@ const Footer = () => {
               <p className="footerparahead" id="iconsize">
                 <Link href="https://twitter.com/ayjnishdd?lang=en">
                   <a id="" target="_blank">
-                    <BsTwitter/>
+                    <BsTwitter color="white"/>
                   </a>
                 </Link>
                 &nbsp;&nbsp;
                 <Link href="#">
                   <a id="" target="_blank">
-                  <ImLinkedin2 />
+                  <ImLinkedin2 color="white"/>
                   </a>
                 </Link>
                 &nbsp;&nbsp;
                 <Link href="https://www.facebook.com/ayjnishdd/">
                   <a id="" target="_blank">
-                  <ImFacebook/>
+                  <ImFacebook color="white"/>
                   </a>
                 </Link>
                 &nbsp;&nbsp;

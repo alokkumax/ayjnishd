@@ -82,6 +82,10 @@ model-viewer {
     margin: 0 1vh 0 1vh;
 }
 
+.navimglink {
+    cursor: pointer;
+}
+
 .nav-link:hover {
     color: var(--main);
     padding: 1vh;
@@ -98,6 +102,13 @@ model-viewer {
 
 .dropdown-toggle::after {
     color: var(--main);
+    /* background-color: var(--main); */
+    margin: 0 1vh 0 1vh;
+}
+
+.dropdown-toggle.active::after {
+    color: white;
+    /* background-color: var(--main); */
     margin: 0 1vh 0 1vh;
 }
 
