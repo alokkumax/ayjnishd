@@ -15,22 +15,22 @@ import Text_to_Speech from "../components/layout/Text-to-Speech"
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 console.log(BACKEND_URL);
 const api = `${BACKEND_URL}/kpi`;
-export async function getServerSideProps() {
-  const res = await fetch(api);
-  const data = await res.json();
-  return {
-    props: {
-      data
-    }
-  }
-}
+// export async function getServerSideProps() {
+//   const res = await fetch(api);
+//   const data = await res.json();
+//   return {
+//     props: {
+//       data
+//     }
+//   }
+// }
 
 export default function Home({ data }) {
   return (
     <div>
       <Navbar active="Home" />
       <Hero />
-      <Kpi data={data} />
+      {/* <Kpi data={data} /> */}
       <Info />
       <News />
       <Maps />
